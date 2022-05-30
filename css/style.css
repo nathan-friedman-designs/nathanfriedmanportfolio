@@ -1,0 +1,41 @@
+/*<html>*/
+    /*<head>*/
+    /*<body>*/
+        /*<header>*/
+.inline-block {
+    display: inline-block;    
+    vertical-align: top;
+}
+div.logo {
+    width: 23%;
+    padding: 1%;
+}
+.logo {
+    text-align: center;
+}
+nav {
+    width: 73%;
+    padding: 1%;
+}
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+        /*<section> heroImg*/
+section.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+        /*<footer>*/
+.footer {
+    background-color: #373738;
+}
+footer.ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px;
+}
