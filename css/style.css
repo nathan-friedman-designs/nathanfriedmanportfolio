@@ -5,37 +5,46 @@
 .inline-block {
     display: inline-block;    
     vertical-align: top;
+    outline: red dotted 3px;
 }
 div.logo {
     width: 23%;
     padding: 1%;
+    outline: red dotted 3px;
 }
 .logo {
     text-align: center;
+    outline: red dotted 3px;
 }
 nav {
     width: 73%;
     padding: 1%;
+    outline: red dotted 3px;
 }
 ul {
     width: 50%;
     margin-left: auto;
+    outline: red dotted 3px;
 }
         /*<section> heroImg*/
 section.heroImg {
     height: 600px;
     padding: 25px;
+    outline: red dotted 3px;
 }
 .content {
     width: 500px;
     margin: 0 auto;
+    outline: red dotted 3px;
 }
         /*<footer>*/
 .footer {
     background-color: #373738;
+    outline: red dotted 3px;
 }
 footer.ul {
     display: inline-block;
     vertical-align: top;
     padding: 25px;
+    outline: red dotted 3px;
 }
