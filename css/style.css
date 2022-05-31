@@ -1,11 +1,20 @@
 /*<html>*/
     /*<head>*/
     /*<body>*/
+body {
+    background-image: url("../graphics/edited_homepage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 0px 2px 4px black;
+}
         /*<header>*/
 .inline-block {
     display: inline-block;    
     vertical-align: top;
     outline: red dotted 3px;
+    color: white;
 }
 div.logo {
     width: 23%;
@@ -32,10 +41,14 @@ section.heroImg {
     padding: 25px;
     outline: red dotted 3px;
 }
+div {
+    outline: red dotted 3px;
+}
 .content {
     width: 500px;
     margin: 0 auto;
     outline: red dotted 3px;
+    color: white;
 }
         /*<footer>*/
 .footer {
@@ -45,6 +58,6 @@ section.heroImg {
 footer.ul {
     display: inline-block;
     vertical-align: top;
-    padding: 25px;
+    padding: 1%;
     outline: red dotted 3px;
 }
