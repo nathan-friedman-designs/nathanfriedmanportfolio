@@ -1,0 +1,82 @@
+/* <html> */
+/* <head> */
+link {
+    display: none;
+  }
+/* <body> */
+body {
+    background-image: url("/graphics/portfolio_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 25%;
+    background-color: #A8322D;
+}
+/* redlining step 1 */
+.step1 {
+    border: white dotted 3px;
+}
+header {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 92%;
+}
+section {
+    position: absolute;
+    left:25%;
+    right: 0%;
+    top: 8%;
+    bottom: 8%;
+}
+footer {
+    position: fixed;
+    left: 25%;
+    right: 0%;
+    top: 92%;
+    bottom: 0%;
+}
+nav {
+    box-sizing: border-box;
+    position: fixed;
+    left: 0%;
+    right: 75%;
+    top: 8%;
+    bottom: 0%;
+}
+/* redlining step 1-1 */
+.step1-1 {
+    border: white dotted 3px;
+}
+#fuiContain1 {
+    position: absolute;
+    left: 34.83%;
+    right: 38.71%;
+    top: 13.54%;
+    bottom: 2.21%
+}
+#fuiContain2 {
+    position: absolute;
+    left: 63.71%;
+    right: 9.84%;
+    top: 13.54%;
+    bottom: 2.21%
+}
+/*redlining step 1-2 */
+.step1-2 {
+    border: white dotted 3px;
+}
+.fuiRadial {
+    position: absolute;
+    left: 4.27%;
+    right: 4.27%;
+    top: 0%;
+    bottom: 72.18%;
+}
+.fuiCard {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 32.46%;
+    bottom: 0%;
+}
