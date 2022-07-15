@@ -13,7 +13,7 @@ body {
 }
 /* redlining step 1 */
 .step1 {
-    border: white dotted 3px;
+    border: gray dotted 3px;
 }
 header {
     position: fixed;
@@ -46,7 +46,7 @@ nav {
 }
 /* redlining step 1-1 */
 .step1-1 {
-    border: white dotted 3px;
+    border: gray dotted 3px;
 }
 #fuiContain1 {
     position: absolute;
@@ -64,7 +64,7 @@ nav {
 }
 /*redlining step 1-2 */
 .step1-2 {
-    border: white dotted 3px;
+    border: gray dotted 3px;
 }
 .fuiRadial {
     position: absolute;
@@ -80,3 +80,76 @@ nav {
     top: 32.46%;
     bottom: 0%;
 }
+/*redlining step 2 */
+.step2 {
+    border: white dotted 3px;
+}
+#pageTitleContain {
+    position: absolute;
+    left: 5.97%;
+    right: 22.1%;
+    top: 0%;
+    bottom: 0%;
+}
+.navLinkContain {
+    position: absolute;
+    width: 100%;
+    height: 6.74%;
+}
+#navLinkContain1 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+#navLinkContain2 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 6.74%;
+    bottom: 0%;
+}
+#navLinkContain3 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 13.48%;
+    bottom: 0%;
+}
+#navLinkContain4 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 20.22%;
+    bottom: 0%;
+}
+.fuiRadialBlockLarge {
+    position: absolute;
+    left: 0%;
+    right: 40%;
+    top: 0%;
+    bottom: 0%;
+}
+.fuiRadialBlockMed {
+    position: absolute;
+    left: 60%;
+    right: 0%;
+    top: 0%;
+    bottom: 33.33%;
+}
+.fuiRadialBlockSmall {
+    position: absolute;
+    left: 42.67%;
+    right: 22.67%;
+    top: 66.67%;
+    bottom: 0%;
+}
+.fuiCardInner {
+    position: absolute;
+    left: 6.1%;
+    right: 6.4%;
+    top: 4.58%;
+    bottom: 5.95%;
+}
+/* redlining step 3 */
