@@ -82,12 +82,26 @@ nav {
 }
 /*redlining step 2 */
 .step2 {
-    border: white dotted 3px;
+    border: gray dotted 3px;
+}
+#logoContain {
+    position: absolute;
+    left: 0%;
+    right: 94%;
+    top: 0%;
+    bottom: 0%;
 }
 #pageTitleContain {
     position: absolute;
-    left: 5.97%;
-    right: 22.1%;
+    left: 6%;
+    right: 22%;
+    top: 0%;
+    bottom: 0%;
+}
+#actionIconsContain {
+    position: absolute;
+    left: 78%;
+    right: 0%;
     top: 0%;
     bottom: 0%;
 }
@@ -153,3 +167,100 @@ nav {
     bottom: 5.95%;
 }
 /* redlining step 3 */
+.step3 {
+    border: gray dotted 3px;
+}
+#logo {
+    position: absolute;
+    left: 2.66%;
+    right: 22.97%;
+    top: 25%;
+    bottom: 25%;
+}
+#pageTitle {
+    position: absolute;
+    left: 9.98%;
+    right: 3.92%;
+    top: 25%;
+    bottom: 25%; 
+}
+#actionIcon1 {
+    position: absolute;
+    left: 39.42%;
+    right: 51.82%;
+    top: 25%;
+    bottom: 25%; 
+}
+#actionIcon2 {
+    position: absolute;
+    left: 59.85%;
+    right: 31.39%;
+    top: 25%;
+    bottom: 25%; 
+}
+#actionIcon3 {
+    position: absolute;
+    left: 80.29%;
+    right: 10.95%;
+    top: 25%;
+    bottom: 25%; 
+}
+.navLinkIcon {
+    position: absolute;
+    left: 5.26%;
+    right: 86.84%;
+    top: 25%;
+    bottom: 25%; 
+}
+.navLinkTitle {
+    position: absolute;
+    left: 23.68%;
+    right: 26.97%;
+    top: 25%;
+    bottom: 25%; 
+}
+.fuiDisc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.fuiCardCornerNW {
+    position: absolute;
+    left: 0%;
+    right: 81.7%;
+    top: 0%;
+    bottom: 86.27%;
+}
+.fuiCardCornerNE {
+    position: absolute;
+    left: 81.7%;
+    right: 0%;
+    top: 0%;
+    bottom: 86.27%;
+}
+.fuiCardCornerSE {
+    position: absolute;
+    left: 81.7%;
+    right: 0%;
+    top: 86.27%;
+    bottom: 0%;
+}
+.fuiCardCornerSW {
+    position: absolute;
+    left: 0%;
+    right: 81.7%;
+    top: 86.27%;
+    bottom: 0%;
+}
+/* redlining step 4 */
+.step4 {
+    border: white dotted 3px;
+}
+.fuiRadialBlockLargeInner {
+    position: absolute;
+    left: 20.56%;
+    right: 20.56%;
+    top: 20.56%;
+    bottom: 20.56%;
+}
