@@ -11,9 +11,16 @@ body {
     background-position: 0% 25%;
     background-color: #A8322D;
 }
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+ul {
+    list-style-type: none;
+}
 /* redlining step 1 */
 .step1 {
-    border: gray dotted 3px;
+    border: black dotted 3px;
 }
 header {
     position: fixed;
@@ -46,7 +53,7 @@ nav {
 }
 /* redlining step 1-1 */
 .step1-1 {
-    border: gray dotted 3px;
+    border: black dotted 3px;
 }
 #fuiContain1 {
     position: absolute;
@@ -82,14 +89,15 @@ nav {
 }
 /*redlining step 2 */
 .step2 {
-    border: gray dotted 3px;
+    border: yellow dotted 3px;
 }
 #logoContain {
     position: absolute;
     left: 0%;
     right: 94%;
-    top: 0%;
-    bottom: 0%;
+    top: 10%;
+    bottom: 10%;
+    text-align: center;
 }
 #pageTitleContain {
     position: absolute;
@@ -97,6 +105,7 @@ nav {
     right: 22%;
     top: 0%;
     bottom: 0%;
+    padding-top: -50%;
 }
 #actionIconsContain {
     position: absolute;
@@ -109,7 +118,6 @@ nav {
     position: absolute;
     width: 100%;
     height: 6.74%;
-    padding-bottom: 80%;
 }
 #navLinkContain1 {
     position: absolute;
@@ -170,17 +178,15 @@ nav {
 
 /* redlining step 3 */
 .step3 {
-    border: gray dotted 3px;
+    border: green dotted 3px;
 }
 #logo {
-    position: absolute;
     left: 2.66%;
     right: 22.97%;
     top: 25%;
     bottom: 25%;
 }
 #pageTitle {
-    position: absolute;
     left: 9.98%;
     right: 3.92%;
     top: 25%;
@@ -195,9 +201,9 @@ nav {
 }
 #actionIcon2 {
     position: absolute;
-    left: 59.85%;
-    right: 31.39%;
-    top: 25%;
+    left: 59%;
+    right: 40%;
+    top: 20%;
     bottom: 25%; 
 }
 #actionIcon3 {
@@ -258,7 +264,7 @@ nav {
 
 /* redlining step 4 */
 .step4 {
-    border: gray dotted 3px;
+    border: blue dotted 3px;
 }
 .fuiRadialBlockInner {
     position: absolute;
@@ -269,7 +275,7 @@ nav {
 }
 /* redlining step 5 */
 .step5 {
-    border: gray dotted 3px;
+    border: purple dotted 3px;
 }
 .fuiDiscInner {
     position: absolute;
@@ -297,4 +303,6 @@ h1 {
     font-family: 'Comfortaa', cursive;
     font-size: 32px;
     color: white;
+    margin-top: 0%;
+    margin-left: 9.98%;
 }
