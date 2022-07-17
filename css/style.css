@@ -109,6 +109,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 6.74%;
+    padding-bottom: 80%;
 }
 #navLinkContain1 {
     position: absolute;
@@ -166,6 +167,7 @@ nav {
     top: 4.58%;
     bottom: 5.95%;
 }
+
 /* redlining step 3 */
 .step3 {
     border: gray dotted 3px;
@@ -182,7 +184,7 @@ nav {
     left: 9.98%;
     right: 3.92%;
     top: 25%;
-    bottom: 25%; 
+    bottom: 25%;  
 }
 #actionIcon1 {
     position: absolute;
@@ -253,14 +255,46 @@ nav {
     top: 86.27%;
     bottom: 0%;
 }
+
 /* redlining step 4 */
 .step4 {
-    border: white dotted 3px;
+    border: gray dotted 3px;
 }
-.fuiRadialBlockLargeInner {
+.fuiRadialBlockInner {
     position: absolute;
     left: 20.56%;
     right: 20.56%;
     top: 20.56%;
     bottom: 20.56%;
+}
+/* redlining step 5 */
+.step5 {
+    border: gray dotted 3px;
+}
+.fuiDiscInner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* graphics */
+.material-symbols-rounded {
+    color: white;
+}
+.fuiImage {
+    width: 100%;
+    height: 100%;
+}
+
+/* fonts */
+p {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 32px;
+    color: white;
 }
