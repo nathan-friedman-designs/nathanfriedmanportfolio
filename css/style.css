@@ -31,14 +31,14 @@ header {
 }
 section {
     position: absolute;
-    left:25%;
+    left:15%;
     right: 0%;
     top: 8%;
     bottom: 8%;
 }
 footer {
     position: fixed;
-    left: 25%;
+    left: 15%;
     right: 0%;
     top: 92%;
     bottom: 0%;
@@ -47,9 +47,24 @@ nav {
     box-sizing: border-box;
     position: fixed;
     left: 0%;
-    right: 75%;
+    right: 85%;
     top: 8%;
     bottom: 0%;
+}
+.vertNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.vertNavLink {
+    color: white;
+    font-family: 'fira sans condensed';
+    font-size: 16px;
+    text-decoration: none;
 }
 /* redlining step 1-1 */
 .step1-1 {
@@ -95,8 +110,9 @@ nav {
     position: absolute;
     left: 0%;
     right: 94%;
-    top: 10%;
-    bottom: 10%;
+    top: 0%;
+    bottom: 0%;
+    padding-top: 0.5%;
     text-align: center;
 }
 #pageTitleContain {
@@ -180,12 +196,6 @@ nav {
 .step3 {
     border: green dotted 3px;
 }
-#logo {
-    left: 2.66%;
-    right: 22.97%;
-    top: 25%;
-    bottom: 25%;
-}
 #pageTitle {
     left: 9.98%;
     right: 3.92%;
@@ -217,7 +227,7 @@ nav {
     position: absolute;
     left: 5.26%;
     right: 86.84%;
-    top: 25%;
+    top: 15%;
     bottom: 25%; 
 }
 .navLinkTitle {
