@@ -22,22 +22,35 @@ ul {
 svg {
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
-/* redlining step 1 */
-.step1 {
-    border: black dotted 3px;
+::-webkit-scrollbar {
+    width: 12px;
 }
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    outline: 3px solid white;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+/* redlining step 1 */
+/*.step1 {
+    border: black dotted 3px;
+}*/
 header {
     position: fixed;
     left: 0%;
     right: 0%;
     top: 0%;
-    bottom: 92%;
+    bottom: 90%;
 }
 section {
     position: absolute;
     left:15%;
     right: 0%;
-    top: 8%;
+    top: 10%;
     bottom: 8%;
 }
 footer {
@@ -52,7 +65,7 @@ nav {
     position: fixed;
     left: 0%;
     right: 85%;
-    top: 8%;
+    top: 10%;
     bottom: 0%;
 }
 .vertNav {
@@ -72,13 +85,13 @@ nav {
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
 }
 /* redlining step 1-1 */
-.step1-1 {
+/*.step1-1 {
     border: black dotted 3px;
-}
+}*/
 #fuiContain1 {
     position: absolute;
-    left: 34.83%;
-    right: 38.71%;
+    left: 5%;
+    right: 5%;
     top: 13.54%;
     bottom: 2.21%
 }
@@ -90,9 +103,9 @@ nav {
     bottom: 2.21%
 }
 /*redlining step 1-2 */
-.step1-2 {
+/*.step1-2 {
     border: gray dotted 3px;
-}
+}*/
 .fuiRadial {
     position: absolute;
     left: 4.27%;
@@ -108,16 +121,16 @@ nav {
     bottom: 0%;
 }
 /*redlining step 2 */
-.step2 {
+/*.step2 {
     border: yellow dotted 3px;
-}
+}*/
 #logoContain {
     position: absolute;
     left: 0%;
-    right: 94%;
+    right: 96%;
     top: 0%;
     bottom: 0%;
-    padding-top: 0.4%;
+    padding-top: 0.8%;
     text-align: center;
 }
 #pageTitleContain {
@@ -126,7 +139,7 @@ nav {
     right: 22%;
     top: 0%;
     bottom: 0%;
-    padding-top: -50%;
+    padding-top: .5%;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
 }
 #actionIconsContain {
@@ -196,16 +209,55 @@ span {
 }
 .fuiCardInner {
     position: absolute;
-    left: 6.1%;
-    right: 6.4%;
-    top: 4.58%;
-    bottom: 5.95%;
+    left: 8%;
+    right: 7%;
+    top: 5%;
+    bottom: 4.5%;
+    border-radius: 7px;
+    outline: 3px solid white;
+}
+#fuiCardInner2 {
+    position: absolute;
+    z-index: 1;
+    left: 8%;
+    right: 7%;
+    top: 5%;
+    bottom: 4.5%;
+    border-radius: 7px;
+    background-color: #002A68;
+    opacity: 0.5;
+}
+#fuiCardTextBox {
+    position: absolute;
+    z-index: 1;
+    left: 12%;
+    right: 7%;
+    top: 5%;
+    bottom: 4.5%;
+    overflow: auto;
+}
+#myName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+button {
+    margin-top: 3%;
+}
+#viewResume {
+    color: #002A68;
+    border-radius: 10px;
+}
+#downloadResume {
+    background: none;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
 /* redlining step 3 */
-.step3 {
+/*.step3 {
     border: green dotted 3px;
-}
+}*/
 #pageTitle {
     left: 9.98%;
     right: 3.92%;
@@ -255,7 +307,7 @@ span {
 }
 .fuiCardCornerNW {
     position: absolute;
-    left: 0%;
+    left: -1.1%;
     right: 81.7%;
     top: 0%;
     bottom: 86.27%;
@@ -263,20 +315,20 @@ span {
 .fuiCardCornerNE {
     position: absolute;
     left: 81.7%;
-    right: 0%;
+    right: -3.1%;
     top: 0%;
     bottom: 86.27%;
 }
 .fuiCardCornerSE {
     position: absolute;
     left: 81.7%;
-    right: 0%;
+    right: -3.1%;
     top: 86.27%;
     bottom: 0%;
 }
 .fuiCardCornerSW {
     position: absolute;
-    left: 0%;
+    left: -1.1%;
     right: 81.7%;
     top: 86.27%;
     bottom: 0%;
@@ -316,7 +368,7 @@ span {
 /* fonts */
 p {
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: white;
 }
 h1 {
@@ -325,4 +377,10 @@ h1 {
     color: white;
     margin-top: 0%;
     margin-left: 9.98%;
+}
+.innerCardText {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-bottom: -1.5%;
 }
