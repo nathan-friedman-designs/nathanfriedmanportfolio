@@ -16,9 +16,6 @@ body {
     display: inline-block;
     vertical-align: top;
 }
-.inline-blockHori {
-    display: inline-block;
-}
 ul {
     list-style-type: none;
 }
@@ -78,7 +75,6 @@ nav {
     width: 15%;
     position: fixed;
     height: 100%;
-    overflow: auto;
 }
 .vertNavLink {
     color: white;
@@ -93,10 +89,10 @@ nav {
 }*/
 #fuiContain1 {
     position: absolute;
-    left: 5%;
-    right: 5%;
+    left: 30%;
+    right: 30%;
     top: 13.54%;
-    bottom: 2.21%
+    bottom: 1%
 }
 #fuiContain2 {
     position: absolute;
@@ -212,86 +208,15 @@ span {
 }
 .fuiCardInner {
     position: absolute;
-    left: 8%;
-    right: 7%;
+    left: 7.2%;
+    right: 6.2%;
     top: 5%;
-    bottom: 4.5%;
+    bottom: 4.7%;
     border-radius: 7px;
-    outline: 3px solid white;
+    background-color: rgba(0, 42, 104, 0.5);
+    outline: 3px solid white;*/
 }
-#fuiCardInner2 {
-    position: absolute;
-    z-index: 1;
-    left: 8%;
-    right: 7%;
-    top: 5%;
-    bottom: 4.5%;
-    border-radius: 7px;
-    background-color: #002A68;
-    opacity: 0.5;
-}
-#fuiCardInner3 {
-    position: absolute;
-    z-index: 1;
-    left: 8%;
-    right: 7%;
-    top: 5%;
-    bottom: 4.5%;
-}
-#fuiCardTextBox {
-    display: inline-block;
-    position: relative;
-    left: 7%;
-    right: 7%;
-    top: 5%;
-    bottom: 4.5%;
-}
-#fuiCardButtonBox {
-    display: inline-block;
-    position: relative;
-    left: 12%;
-    right: 7%;
-    bottom: 4.5%;
-}
-#myName {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 1%;
-}
-button {
-    margin-top: 5%;
-    width: 100%;
-}
-button:hover {
-    cursor: pointer;
-}
-#viewResume {
-    background: white;
-    border-radius: 10px;
-    border: none;
-}
-#viewResumeText {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    color: #002A68;
-}
-#downloadResume {
-    background: none;
-    border: 3px solid white;
-    border-radius: 10px;
-}
-#downloadResumeText {
-    font-family: 'Fira Sans Condensed', sans-serif;
-}
-.inButton {
-    display: inline-block;
-    padding-top: auto;
-    padding-bottom: auto;
-    filter: drop-shadow(0 0 0);
-}
-.resumeIcon {
-    vertical-align: middle;
-    margin-bottom: 5%; 
-}
+
 
 /* redlining step 3 */
 /*.step3 {
