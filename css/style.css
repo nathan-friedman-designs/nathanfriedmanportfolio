@@ -12,6 +12,10 @@ body {
     background-color: #A8322D;
     cursor: crosshair;
 }
+button {
+    width: 214px;
+    height: 36px;
+}
 .inline-block {
     display: inline-block;
     vertical-align: top;
@@ -218,6 +222,18 @@ span {
 }
 .fuiCardContent {
     display: inline-block;
+    position: relative;
+}
+#cardText {
+    padding-left: 8.2%;
+    width: 33%;
+    top: 15%;
+    position: absolute;
+}  
+#cardButtons {
+    top: 33%;
+    position: absolute;
+    left: 50%;
 }
 
 /* redlining step 3 */
