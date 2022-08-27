@@ -216,7 +216,9 @@ span {
     background-color: rgba(0, 42, 104, 0.5);
     outline: 3px solid white;
 }
-
+.fuiCardContent {
+    display: inline-block;
+}
 
 /* redlining step 3 */
 /*.step3 {
