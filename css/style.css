@@ -20,6 +20,7 @@ button {
 }
 .primaryButton {
     background-color: white;
+    position: relative;
 }
 .secondaryButton {
     background: none;
@@ -249,6 +250,10 @@ span {
     position: absolute;
     width: 50%;
     left: 60%;
+}
+#viewResumeButtonIcon {
+    filter: drop-shadow(0 0 0);
+    margin-top: 3%;
 }
 
 /* redlining step 3 */
