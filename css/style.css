@@ -18,6 +18,14 @@ button {
     margin-bottom: 5%;
     border-radius: 10px;
 }
+.primaryButton {
+    background-color: white;
+}
+.secondaryButton {
+    background: none;
+    outline: 3px solid white;
+    color: white;
+}
 .inline-block {
     display: inline-block;
     vertical-align: top;
@@ -88,6 +96,9 @@ nav {
     font-size: 16px;
     text-decoration: none;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
+}
+.link:hover {
+    cursor: pointer;
 }
 /* redlining step 1-1 */
 /*.step1-1 {
@@ -356,6 +367,10 @@ p {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 16px;
     color: white;
+}
+.link {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
 }
 #myName {
     font-size: 32px;
