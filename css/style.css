@@ -4,6 +4,9 @@ link {
     display: none;
   }
 /* <body> */
+a:link {
+    text-decoration: none;
+}
 body {
     background-image: url("/graphics/portfolio_background.png");
     background-repeat: no-repeat;
@@ -72,11 +75,32 @@ section {
     bottom: 8%;
 }
 footer {
+    box-sizing: border-box;
     position: fixed;
-    left: 15%;
+    left: 0%;
     right: 0%;
     top: 92%;
     bottom: 0%;
+}
+#mail {
+    vertical-align: text-bottom;
+}
+#linkedInIcon {
+    vertical-align: text-bottom;
+}
+.emailContact {
+    position: relative;
+    left: 32.5%;
+    right: 0%;
+    top: 25%;
+    bottom: 25%;
+}
+.linkedInContact {
+    position: relative;
+    left: 62.5%;
+    right: 0%;
+    top: 25%;
+    bottom: 25%;
 }
 nav {
     box-sizing: border-box;
@@ -113,7 +137,7 @@ nav {
     left: 5%;
     right: 5%;
     top: 13.54%;
-    bottom: 1%
+    bottom: 5%
 }
 #fuiContain2 {
     position: absolute;
@@ -242,10 +266,10 @@ span {
     position: relative;
 }
 #cardText {
+    display: block;
+    padding-top: 5%;
     padding-left: 8.2%;
     width: 40%;
-    top: 3.3%;
-    position: absolute;
 }  
 #cardButtons {
     top: 0%;
@@ -403,4 +427,5 @@ h1 {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
     color: white;
+    margin: 2%;
 }
