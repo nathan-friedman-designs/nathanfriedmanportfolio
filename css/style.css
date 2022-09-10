@@ -24,8 +24,11 @@ button {
 }
 .secondaryButton {
     background: none;
-    outline: 3px solid white;
+    position: relative;
+    border: 1px solid white;
+    outline: 1px solid white;
     color: white;
+    padding-bottom: 1%;
 }
 .inline-block {
     display: inline-block;
@@ -245,14 +248,23 @@ span {
     position: absolute;
 }  
 #cardButtons {
-    top: 25%;
-    bottom: 25%;
+    top: 0%;
+    bottom: 0%;
+    padding-top: 8%;
+    padding-bottom: 5%;
     position: absolute;
-    width: 50%;
+    width: 40%;
     left: 60%;
 }
 #viewResumeButtonIcon {
     filter: drop-shadow(0 0 0);
+    position: relative;
+    vertical-align: sub;
+}
+#downloadResumeButtonIcon {
+    filter: none;
+    position: relative;
+    vertical-align: sub;
 }
 
 /* redlining step 3 */
