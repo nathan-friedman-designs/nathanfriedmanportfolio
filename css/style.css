@@ -170,11 +170,11 @@ nav {
 }*/
 #logoContain {
     position: absolute;
-    left: 0%;
-    right: 96%;
+    left: 0.25%;
+    right: 95.75%;
     top: 0%;
     bottom: 0%;
-    padding-top: 0.8%;
+    padding-top: 1%;
     text-align: center;
 }
 #pageTitleContain {
