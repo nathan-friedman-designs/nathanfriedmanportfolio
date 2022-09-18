@@ -37,9 +37,6 @@ button {
     display: inline-block;
     vertical-align: top;
 }
-ul {
-    list-style-type: none;
-}
 svg {
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
@@ -66,6 +63,16 @@ header {
     right: 0%;
     top: 0%;
     bottom: 90%;
+}
+nav {
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0%;
+    right: 75.5%;
+    top: 10%;
+    bottom: 0%;
 }
 section {
     position: absolute;
@@ -102,29 +109,21 @@ footer {
     top: 25%;
     bottom: 25%;
 }
-nav {
-    box-sizing: border-box;
-    position: fixed;
-    left: 0%;
-    right: 85%;
-    top: 10%;
-    bottom: 0%;
-}
-.vertNav {
+/*.vertNav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 15%;
     position: fixed;
     height: 100%;
-}
-.vertNavLink {
+}*/
+/*.vertNavLink {
     color: white;
     font-family: 'fira sans condensed';
     font-size: 16px;
     text-decoration: none;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
-}
+}*/
 .link:hover {
     cursor: pointer;
 }
@@ -132,7 +131,7 @@ nav {
 /*.step1-1 {
     border: black dotted 3px;
 }*/
-#fuiContain1 {
+/*#fuiContain1 {
     position: absolute;
     left: 5%;
     right: 5%;
@@ -145,12 +144,12 @@ nav {
     right: 9.84%;
     top: 13.54%;
     bottom: 2.21%
-}
+}*/
 /*redlining step 1-2 */
 /*.step1-2 {
     border: gray dotted 3px;
 }*/
-.fuiRadial {
+/*.fuiRadial {
     position: absolute;
     left: 4.27%;
     right: 4.27%;
@@ -163,7 +162,7 @@ nav {
     right: 0%;
     top: 32.46%;
     bottom: 0%;
-}
+}*/
 /*redlining step 2 */
 /*.step2 {
     border: yellow dotted 3px;
@@ -197,12 +196,27 @@ nav {
 span {
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
 }
-.navLinkContain {
-    position: absolute;
-    width: 100%;
-    height: 6.74%;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-#navLinkContain1 {
+li {
+    display: block;
+}
+.navLinkContainer {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    outline: 1px white solid;
+}
+.navLinkContainer:hover {
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+}
+
+/*#navLinkContain1 {
     position: absolute;
     left: 0%;
     right: 0%;
@@ -229,8 +243,8 @@ span {
     right: 0%;
     top: 20.22%;
     bottom: 0%;
-}
-.fuiRadialBlockLarge {
+}*/
+/*.fuiRadialBlockLarge {
     position: absolute;
     left: 0%;
     right: 40%;
@@ -250,9 +264,11 @@ span {
     right: 22.67%;
     top: 66.67%;
     bottom: 0%;
-}
-.fuiCardInner {
+}*/
+/*.fuiCardInner {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     left: 7.2%;
     right: 6.2%;
     top: 5%;
@@ -262,23 +278,21 @@ span {
     outline: 3px solid white;
 }
 .fuiCardContent {
-    display: inline-block;
     position: relative;
+    width: 50%;
 }
-#cardText {
-    display: block;
+#cardText {*/
+    /*display: block;
     padding-top: 5%;
-    padding-left: 8.2%;
-    width: 40%;
+    width: 40%;*/
+    /*padding-left: 8.2%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
 }  
 #cardButtons {
-    top: 0%;
-    bottom: 0%;
-    padding-top: 8%;
-    padding-bottom: 5%;
-    position: absolute;
-    width: 40%;
-    left: 60%;
+    margin: auto;
+    width: 50%;
 }
 #viewResumeButtonIcon {
     filter: drop-shadow(0 0 0);
@@ -289,8 +303,7 @@ span {
     filter: none;
     position: relative;
     vertical-align: sub;
-}
-
+}*/
 /* redlining step 3 */
 /*.step3 {
     border: green dotted 3px;
@@ -322,21 +335,38 @@ span {
     top: 20%;
     bottom: 25%; 
 }
-.navLinkIcon {
+.LinkIcon {
+    margin-left: 5.26%;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 25%;
+}
+.LinkText {
+    margin-left: 23.68%;
+    position: absolute;
+    height: 24px;
+    top: 25%;
+    padding-top: 1%;
+    /*top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);*/
+}
+/*.navLinkIcon {
     position: absolute;
     left: 5.26%;
     right: 86.84%;
     top: 15%;
     bottom: 25%; 
-}
-.navLinkTitle {
+}*/
+/*.navLinkTitle {
     position: absolute;
     left: 23.68%;
     right: 26.97%;
     top: 25%;
     bottom: 25%; 
-}
-.fuiDisc {
+}*/
+/*fuiDisc {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -369,29 +399,26 @@ span {
     right: 81.7%;
     top: 86.27%;
     bottom: 0%;
-}
+}*/
 
 /* redlining step 4 */
-.step4 {
-    border: blue dotted 3px;
-}
-.fuiRadialBlockInner {
+/*.fuiRadialBlockInner {
     position: absolute;
     left: 20.56%;
     right: 20.56%;
     top: 20.56%;
     bottom: 20.56%;
-}
+}*/
 /* redlining step 5 */
-.step5 {
+/*.step5 {
     border: purple dotted 3px;
-}
-.fuiDiscInner {
+}*/
+/*.fuiDiscInner {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-}
+}*/
 
 /* graphics */
 .material-symbols-rounded {
@@ -411,6 +438,12 @@ p {
 .link {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 16px;
+    color: white;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+a:hover {
+    color: #002A68;
+    filter: drop-shadow(0 0 0);
 }
 #myName {
     font-size: 32px;
