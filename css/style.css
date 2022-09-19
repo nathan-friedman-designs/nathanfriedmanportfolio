@@ -35,7 +35,7 @@ button {
 }
 .inline-block {
     display: inline-block;
-    vertical-align: top;
+    outline: 3px blue dotted;
 }
 svg {
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
@@ -59,10 +59,10 @@ svg {
 }*/
 header {
     position: fixed;
-    left: 24.5%;
+    height: 56px;
+    left: 0%;
     right: 0%;
     top: 0%;
-    bottom: 90%;
 }
 nav {
     position: fixed;
@@ -72,8 +72,12 @@ nav {
     right: 75.5%;
     top: 0%;
     height: 100%;
-    outline: 1px white dotted;
+    margin-top: 56px;
 }
+hr.solid {
+    border-top: 1px solid white;
+    margin-left: 5.26%;
+  }
 section {
     position: absolute;
     left:24.5%;
@@ -164,7 +168,7 @@ footer {
 /*.step2 {
     border: yellow dotted 3px;
 }*/
-#logoContain {
+/*#logoContain {
     position: absolute;
     left: 0.25%;
     right: 95.75%;
@@ -172,36 +176,26 @@ footer {
     bottom: 0%;
     padding-top: 1%;
     text-align: center;
-}
+}*/
 #pageTitleContain {
     position: absolute;
+    float: left;
     left: 0%;
-    right: 13.3%;
-    top: 0%;
-    bottom: 0%;
-    padding-top: .5%;
-    padding-left: 8.2%;
-    text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
-    outline: 1px white solid;
-}
-#actionIconsContain {
-    position: absolute;
-    left: 86.69%;
     right: 0%;
     top: 0%;
     bottom: 0%;
+    padding-left: 1%;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
     outline: 1px white solid;
 }
-#actionIconsContain ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-#actionIconsContain li {
+#pageTitleContain #actionIconsContainer {
     float: right;
-    text-align: center;
-    padding: 
+}
+.actionIcon {
+    margin-right: 32px;
+    width: 24px;
+    height: 56px;
+    outline: 3px blue dotted;
 }
 span {
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
@@ -217,7 +211,7 @@ li {
 .navLinkContainer {
     position: relative;
     width: 100%;
-    height: 48px;
+    height: 56px;
 }
 .navLinkContainer:hover {
     cursor: pointer;
@@ -328,12 +322,12 @@ li {
 /*.step3 {
     border: green dotted 3px;
 }*/
-#pageTitle {
+/*#pageTitle {
     left: 9.98%;
     right: 3.92%;
     top: 25%;
     bottom: 25%;  
-}
+}*/
 /*#actionIcon1 {
     position: absolute;
     left: 39.42%;
@@ -356,10 +350,10 @@ li {
     bottom: 25%; 
 }*/
 .LinkIcon {
-    margin-left: 5.26%;
     position: absolute;
+    margin-left: 5.26%;
     width: 24px;
-    height: 48px;
+    height: 56px;
     top: 25%;
 }
 .navLinkText {
@@ -469,11 +463,12 @@ a {
     font-size: 32px;
     color: white;
 }
-h1 {
+#pageTitleContain h1 {
+    float: left;
     font-family: 'Comfortaa', cursive;
     font-size: 32px;
     color: white;
-    margin-top: 0%;
+    margin-left: 5px;
 }
 .innerCardText {
     font-family: 'Nunito Sans', sans-serif;
