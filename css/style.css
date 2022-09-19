@@ -83,7 +83,7 @@ section {
     left:24.5%;
     right: 0%;
     top: 10%;
-    bottom: 8%;
+    bottom: 0%;
 }
 footer {
     box-sizing: border-box;
@@ -186,16 +186,22 @@ footer {
     bottom: 0%;
     padding-left: 1%;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
-    outline: 1px white solid;
 }
 #pageTitleContain #actionIconsContainer {
     float: right;
-}
-.actionIcon {
-    margin-right: 32px;
-    width: 24px;
     height: 56px;
     outline: 3px blue dotted;
+}
+#downloadResumeIcon {
+    outline: 3px white dotted;
+}
+.actionIcon {
+    padding-top: 16px;
+    margin-right: 32px;
+    width: 24px;
+}
+.actionIcon:hover {
+    cursor: pointer;
 }
 span {
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
