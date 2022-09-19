@@ -59,24 +59,24 @@ svg {
 }*/
 header {
     position: fixed;
-    left: 0%;
+    left: 24.5%;
     right: 0%;
     top: 0%;
     bottom: 90%;
 }
 nav {
-    box-sizing: border-box;
     position: fixed;
     display: flex;
     flex-direction: column;
     left: 0%;
     right: 75.5%;
-    top: 10%;
-    bottom: 0%;
+    top: 0%;
+    height: 100%;
+    outline: 1px white dotted;
 }
 section {
     position: absolute;
-    left:15%;
+    left:24.5%;
     right: 0%;
     top: 10%;
     bottom: 8%;
@@ -124,9 +124,6 @@ footer {
     text-decoration: none;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
 }*/
-.link:hover {
-    cursor: pointer;
-}
 /* redlining step 1-1 */
 /*.step1-1 {
     border: black dotted 3px;
@@ -178,20 +175,33 @@ footer {
 }
 #pageTitleContain {
     position: absolute;
-    left: 6%;
-    right: 22%;
+    left: 0%;
+    right: 13.3%;
     top: 0%;
     bottom: 0%;
     padding-top: .5%;
+    padding-left: 8.2%;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
+    outline: 1px white solid;
 }
 #actionIconsContain {
     position: absolute;
-    left: 78%;
+    left: 86.69%;
     right: 0%;
     top: 0%;
     bottom: 0%;
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
+    outline: 1px white solid;
+}
+#actionIconsContain ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#actionIconsContain li {
+    float: right;
+    text-align: center;
+    padding: 
 }
 span {
     text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
@@ -208,12 +218,22 @@ li {
     position: relative;
     width: 100%;
     height: 48px;
-    outline: 1px white solid;
 }
 .navLinkContainer:hover {
     cursor: pointer;
     background: white;
     border-radius: 10px;
+}
+.navLinkContainer:hover a {
+    color: #002A68;
+    filter: drop-shadow(0 0 0);
+}
+.navLinkContainer:hover span {
+    color: #002A68;
+    text-shadow: 0 0 0 rgb(0 0 0 / 0);
+}
+.navLinkContainer:hover svg {
+    filter: drop-shadow(0 0 0);
 }
 
 /*#navLinkContain1 {
@@ -314,7 +334,7 @@ li {
     top: 25%;
     bottom: 25%;  
 }
-#actionIcon1 {
+/*#actionIcon1 {
     position: absolute;
     left: 39.42%;
     right: 51.82%;
@@ -334,15 +354,15 @@ li {
     right: 10.95%;
     top: 20%;
     bottom: 25%; 
-}
+}*/
 .LinkIcon {
     margin-left: 5.26%;
     position: absolute;
     width: 24px;
-    height: 24px;
+    height: 48px;
     top: 25%;
 }
-.LinkText {
+.navLinkText {
     margin-left: 23.68%;
     position: absolute;
     height: 24px;
@@ -435,16 +455,16 @@ p {
     font-size: 16px;
     color: white;
 }
-.link {
+a {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-size: 16px;
     color: white;
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
-a:hover {
+/*li a:hover {
     color: #002A68;
     filter: drop-shadow(0 0 0);
-}
+}*/
 #myName {
     font-size: 32px;
     color: white;
@@ -454,7 +474,6 @@ h1 {
     font-size: 32px;
     color: white;
     margin-top: 0%;
-    margin-left: 9.98%;
 }
 .innerCardText {
     font-family: 'Nunito Sans', sans-serif;
