@@ -9,10 +9,10 @@ a:link {
 }
 body {
     background-image: url("/graphics/portfolio_background.png");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 25%;
     background-color: #A8322D;
+    background-attachment: fixed;
     cursor: crosshair;
 }
 button {
@@ -58,19 +58,22 @@ svg {
     border: black dotted 3px;
 }*/
 header {
+    background-image: url("/graphics/portfolio_background.png");
+    background-attachment: fixed;
     position: fixed;
     height: 56px;
     left: 0%;
     right: 0%;
     top: 0%;
+    z-index: 1;
 }
 nav {
     position: fixed;
     display: flex;
     flex-direction: column;
-    left: 0%;
+    left: 0;
     right: 75.5%;
-    top: 0%;
+    top: 0;
     height: 100%;
     margin-top: 56px;
 }
@@ -132,14 +135,19 @@ footer {
 /*.step1-1 {
     border: black dotted 3px;
 }*/
-/*#fuiContain1 {
+#fuiContain1 {
     position: absolute;
-    left: 5%;
-    right: 5%;
-    top: 13.54%;
-    bottom: 5%
+    /*left: 10.34%;*/
+    left: 10.34%;
+    /*right: 38.71%;*/
+    right: 480.78px;
+    /*top: 13.54%;*/
+    top: 0;
+    width: 328px;
+    height: 508px;
+    /*bottom: 2.21%;*/
 }
-#fuiContain2 {
+/*#fuiContain2 {
     position: absolute;
     left: 63.71%;
     right: 9.84%;
@@ -150,20 +158,25 @@ footer {
 /*.step1-2 {
     border: gray dotted 3px;
 }*/
-/*.fuiRadial {
+.fuiRadial {
     position: absolute;
-    left: 4.27%;
-    right: 4.27%;
-    top: 0%;
-    bottom: 72.18%;
+    height: 180px;
+    /*left: 4.27%;
+    right: 4.27%;*/
+    left: 14px;
+    right: 14px;
+    top: 0;
+    /*bottom: 72.18%;*/
+    bottom: 467px;
 }
 .fuiCard {
     position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 32.46%;
-    bottom: 0%;
-}*/
+    left: 0;
+    right: 0;
+    top: 210px;
+    bottom: 0;
+    height: 300px;
+}
 /*redlining step 2 */
 /*.step2 {
     border: yellow dotted 3px;
@@ -285,32 +298,47 @@ li {
     top: 66.67%;
     bottom: 0%;
 }*/
-/*.fuiCardInner {
+.fuiCardInner {
     position: absolute;
     display: flex;
     flex-direction: column;
-    left: 7.2%;
+    /*left: 7.2%;
     right: 6.2%;
     top: 5%;
-    bottom: 4.7%;
-    border-radius: 7px;
+    bottom: 4.7%;*/
+    width: 278px;
+    height: 246px;
+    left: 24.5px;
+    top: 24.5px;
+    border-radius: 5px;
     background-color: rgba(0, 42, 104, 0.5);
     outline: 3px solid white;
+    
 }
-.fuiCardContent {
+#cardBorder {
+    position: absolute;
+    width: 278px;
+    height: 246px;
+    left: 24.5px;
+    top: 24.5px;
+    border-radius: 5px;
+    outline: 3px solid white;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+    z-index: -1;
+}
+/*.fuiCardContent {
     position: relative;
     width: 50%;
-}
-#cardText {*/
+}*/
+#cardText {
     /*display: block;
     padding-top: 5%;
     width: 40%;*/
-    /*padding-left: 8.2%;
-    margin: 0;
+    margin-left: 8.2%;
     position: absolute;
-    top: 50%;
+    top: 14px;
 }  
-#cardButtons {
+/*#cardButtons {
     margin: auto;
     width: 50%;
 }
@@ -391,35 +419,43 @@ li {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-}
+}*/
 .fuiCardCornerNW {
     position: absolute;
-    left: -3%;
+    /*left: -3%;
     right: 81.7%;
     top: 0%;
-    bottom: 86.27%;
+    bottom: 86.27%;*/
+    top: 0;
+    left: 0;
 }
 .fuiCardCornerNE {
     position: absolute;
-    left: 81.7%;
+    /*left: 81.7%;
     right: -4.6%;
     top: 0%;
-    bottom: 86.27%;
+    bottom: 86.27%;*/
+    top: 0;
+    right: 0;
 }
 .fuiCardCornerSE {
     position: absolute;
-    left: 81.7%;
+    /*left: 81.7%;
     right: -4.6%;
     top: 86.27%;
-    bottom: 0%;
+    bottom: 0%;*/
+    bottom: 0;
+    right: 0;
 }
 .fuiCardCornerSW {
     position: absolute;
-    left: -3%;
+    /*left: -3%;
     right: 81.7%;
     top: 86.27%;
-    bottom: 0%;
-}*/
+    bottom: 0%;*/
+    bottom: 0;
+    left: 0;
+}
 
 /* redlining step 4 */
 /*.fuiRadialBlockInner {
@@ -454,6 +490,7 @@ p {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 12px;
     color: white;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
 a {
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -466,10 +503,10 @@ a {
     color: #002A68;
     filter: drop-shadow(0 0 0);
 }*/
-#myName {
+/*#myName {
     font-size: 32px;
     color: white;
-}
+}*/
 #pageTitleContain h1 {
     float: left;
     font-family: 'Comfortaa', sans-serif;
@@ -479,7 +516,7 @@ a {
 }
 .innerCardText {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: white;
     margin: 2%;
 }
