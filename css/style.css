@@ -76,6 +76,7 @@ nav {
     top: 0;
     height: 100%;
     margin-top: 56px;
+    max-width: 304px;
 }
 hr.solid {
     border-top: 1px solid white;
@@ -138,14 +139,14 @@ footer {
 #fuiContain1 {
     position: absolute;
     /*left: 10.34%;*/
-    left: 10.34%;
+    left: 10.34vh;
     /*right: 38.71%;*/
     right: 480.78px;
     /*top: 13.54%;*/
     top: 0;
     width: 328px;
-    height: 508px;
-    /*bottom: 2.21%;*/
+    /*height: 508px;*/
+    bottom: 2.21vh;
 }
 /*#fuiContain2 {
     position: absolute;
@@ -174,8 +175,10 @@ footer {
     left: 0;
     right: 0;
     top: 210px;
-    bottom: 0;
-    height: 300px;
+    bottom: 2.21vh;
+    min-height: 300px;
+    max-height: 437px;
+    /*height: 300px;*/
 }
 /*redlining step 2 */
 /*.step2 {
@@ -306,10 +309,11 @@ li {
     right: 6.2%;
     top: 5%;
     bottom: 4.7%;*/
-    width: 278px;
-    height: 246px;
+    width: 279px;
+    /*height: 246px;*/
     left: 24.5px;
     top: 24.5px;
+    bottom: 28px;
     border-radius: 5px;
     background-color: rgba(0, 42, 104, 0.5);
     outline: 3px solid white;
@@ -318,7 +322,7 @@ li {
 #cardBorder {
     position: absolute;
     width: 278px;
-    height: 246px;
+    bottom: 28px;
     left: 24.5px;
     top: 24.5px;
     border-radius: 5px;
@@ -337,12 +341,15 @@ li {
     margin-left: 8.2%;
     position: absolute;
     top: 14px;
+    width: 214px;
 }  
-/*#cardButtons {
-    margin: auto;
-    width: 50%;
+#cardButtons {
+    position: absolute;
+    top: 60%;
+    margin-left: 8.2%;
+    margin-top: 16px;
 }
-#viewResumeButtonIcon {
+/*#viewResumeButtonIcon {
     filter: drop-shadow(0 0 0);
     position: relative;
     vertical-align: sub;
