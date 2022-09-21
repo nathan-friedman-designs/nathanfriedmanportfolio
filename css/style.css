@@ -15,15 +15,18 @@ body {
     background-attachment: fixed;
     cursor: crosshair;
 }
-button {
+.button {
+    position: relative;
     width: 214px;
-    height: 36px;
+    height: 40px;
     margin-bottom: 5%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .primaryButton {
-    background-color: white;
     position: relative;
+    background-color: white;
+    border: none;
+    font-family: 'Fira Sans Condensed';
 }
 .secondaryButton {
     background: none;
@@ -47,7 +50,7 @@ svg {
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
+    border-radius: 20px;
     outline: 3px solid white;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -75,12 +78,14 @@ nav {
     right: 75.5%;
     top: 0;
     height: 100%;
+    width: 300px;
     margin-top: 56px;
     max-width: 304px;
 }
 hr.solid {
     border-top: 1px solid white;
     margin-left: 5.26%;
+    margin-right: 5.26%;
   }
 section {
     position: absolute;
@@ -232,13 +237,14 @@ li {
 }
 .navLinkContainer {
     position: relative;
-    width: 100%;
+    max-width: 304px;
     height: 56px;
+    border-radius: 20px;
 }
 .navLinkContainer:hover {
     cursor: pointer;
     background: white;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .navLinkContainer:hover a {
     color: #002A68;
@@ -343,11 +349,10 @@ li {
     top: 14px;
     width: 214px;
 }  
-#cardButtons {
+.cardButtons {
     position: absolute;
-    top: 60%;
+    top: 150px;
     margin-left: 8.2%;
-    margin-top: 16px;
 }
 /*#viewResumeButtonIcon {
     filter: drop-shadow(0 0 0);
@@ -398,8 +403,8 @@ li {
     top: 25%;
 }
 .navLinkText {
-    margin-left: 23.68%;
     position: absolute;
+    margin-left: 23.68%;
     height: 24px;
     top: 25%;
     padding-top: 1%;
@@ -407,6 +412,27 @@ li {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);*/
 }
+.buttonLinkIcon {
+    position: absolute;
+    left: 16px;
+    width: 18px;
+    height: 40px;
+    top: 0;
+    padding-top: 11px;
+}
+.buttonLinkIcon svg {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0);
+    filter: drop-shadow(0 0 0 rgb(0 0 0/0));
+}
+.buttonLinkText {
+    position: absolute;
+    /*left: 23.68%;*/
+    left: 42px;
+    right: 24px;
+    margin-top: 9px;
+    filter: drop-shadow(0 0 0);
+}
+
 /*.navLinkIcon {
     position: absolute;
     left: 5.26%;
@@ -505,6 +531,13 @@ a {
     font-weight: medium;
     color: white;
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+#primaryButtonText {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: medium;
+    color: #002A68;
+    text-align: center;
 }
 /*li a:hover {
     color: #002A68;
