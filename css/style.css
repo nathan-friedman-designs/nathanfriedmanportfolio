@@ -451,13 +451,14 @@ li {
 
 /* fonts */
 p {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
     color: white;
 }
 a {
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: medium;
     color: white;
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
@@ -471,14 +472,14 @@ a {
 }
 #pageTitleContain h1 {
     float: left;
-    font-family: 'Comfortaa', cursive;
-    font-size: 32px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 27px;
     color: white;
     margin-left: 5px;
 }
 .innerCardText {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     color: white;
     margin: 2%;
 }
