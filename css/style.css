@@ -83,6 +83,9 @@ nav {
     margin-top: 56px;
     max-width: 304px;
 }
+#tabNav {
+    display: none;
+}
 hr.solid {
     border-top: 1px solid white;
     margin-left: 5.26%;
@@ -234,6 +237,8 @@ li {
 }
 .navLinkContainer {
     position: relative;
+    display: flex;
+    flex-direction: row;
     max-width: 304px;
     height: 56px;
     border-radius: 20px;
@@ -567,7 +572,32 @@ a {
 
 /* tablet mode */
 @media only screen and (max-width: 959px) {
-    nav {
+    #deskNav {
         display: none;
+    }
+    #tabNav {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        right: 95%;
+        top: 0;
+        height: 100%;
+        width: 90px;
+        margin-top: 56px;
+    }
+    .navLinkContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .LinkIcon {
+        position: absolute;
+        margin-left: 33%;
+        width: 24px;
+        height: 56px;
+        top: 25%;
+    }
+    span {
+        text-shadow: 0 0 0 rgb(0 0 0 / 0);
     }
 }
