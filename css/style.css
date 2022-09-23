@@ -1,3 +1,4 @@
+/* desktop mode */
 /* <html> */
 /* <head> */
 link {
@@ -31,10 +32,10 @@ body {
 .secondaryButton {
     background: none;
     position: relative;
-    border: 1px solid white;
-    outline: 1px solid white;
+    border: none;
+    outline: 2px solid white;
     color: white;
-    padding-bottom: 1%;
+    margin-top: 5%;
 }
 .inline-block {
     display: inline-block;
@@ -211,10 +212,6 @@ footer {
 #pageTitleContain #actionIconsContainer {
     float: right;
     height: 56px;
-    outline: 3px blue dotted;
-}
-#downloadResumeIcon {
-    outline: 3px white dotted;
 }
 .actionIcon {
     padding-top: 16px;
@@ -351,7 +348,7 @@ li {
 }  
 .cardButtons {
     position: absolute;
-    top: 150px;
+    top: 140px;
     margin-left: 8.2%;
 }
 /*#viewResumeButtonIcon {
@@ -539,6 +536,13 @@ a {
     color: #002A68;
     text-align: center;
 }
+#secondaryButtonText {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: medium;
+    color: white;
+    text-align: center;
+}
 /*li a:hover {
     color: #002A68;
     filter: drop-shadow(0 0 0);
@@ -559,4 +563,11 @@ a {
     font-size: 16px;
     color: white;
     margin: 2%;
+}
+
+/* tablet mode */
+@media only screen and (max-width: 959px) {
+    nav {
+        display: none;
+    }
 }
