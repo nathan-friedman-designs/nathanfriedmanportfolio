@@ -1,0 +1,701 @@
+/* <html> */
+/* <head> */
+link {
+    display: none;
+  }
+/* <body> */
+a:link {
+    text-decoration: none;
+}
+body {
+    background-image: url("/graphics/portfolio_background.png");
+    background-size: cover;
+    background-position: 0% 25%;
+    background-color: #A8322D;
+    background-attachment: fixed;
+    cursor: crosshair;
+}
+.button {
+    position: relative;
+    width: 214px;
+    height: 40px;
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+.primaryButton {
+    position: relative;
+    background-color: white;
+    border: none;
+    font-family: 'Fira Sans Condensed';
+}
+.secondaryButton {
+    background: none;
+    position: relative;
+    border: none;
+    outline: 2px solid white;
+    color: white;
+    margin-top: 5%;
+}
+.inline-block {
+    display: inline-block;
+    outline: 3px blue dotted;
+}
+svg {
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    outline: 3px solid white;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+/* redlining step 1 */
+/*.step1 {
+    border: black dotted 3px;
+}*/
+
+/* responsive design */
+/* compact mode */ /*
+@media only screen and (max-width: 599px) {
+    [class*="col-"] {
+    width: 100%;
+  }
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+  }
+  .navTabTitle {
+    display: none;
+  }
+}
+*/
+/* medium mode */ /*
+@media only screen and (min-width: 600px) {
+    .navTabTitle {
+    display: none;
+  }
+  .col-m-1 { 
+  width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+} */
+/* expanded mode */ /*
+@media only screen and (min-width: 840px) {
+  .navTabTitle {
+    display: inline-block;
+  }
+.col-l-1 { 
+  width: 8.33%;
+}
+.col-l-2 {
+  width: 16.66%;
+}
+.col-l-3 {
+  width: 25%;
+}
+.col-l-4 {
+  width: 33.33%;
+}
+.col-l-5 {
+  width: 41.66%;
+}
+.col-l-6 {
+  width: 50%;
+}
+.col-l-7 {
+  width: 58.33%;
+}
+.col-l-8 {
+  width: 66.66%;
+}
+.col-l-9 {
+  width: 75%;
+}
+.col-l-10 {
+  width: 83.33%;
+}
+.col-l-11 {
+  width: 91.66%;
+}
+.col-l-12 {
+  width: 100%;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+* {
+  box-sizing: border-box;
+}
+[class*="col-"] {
+  float: left;
+  padding: 16px;
+  border: 1px solid red;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.navTab {
+  display: flex;
+  flex-direction: row;
+}
+section {
+  display: flex;
+  flex-direction: row;
+}
+.right {
+  float: right;
+} */
+header {
+    background-image: url("/graphics/portfolio_background.png");
+    background-attachment: fixed;
+    position: fixed;
+    height: 56px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    z-index: 1;
+}
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 75.5%;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    margin-top: 56px;
+    max-width: 304px;
+}
+#tabNav {
+    display: none;
+}
+hr.solid {
+    border-top: 1px solid white;
+    margin-left: 5.26%;
+    margin-right: 5.26%;
+  }
+section {
+    position: absolute;
+    left:24.5%;
+    right: 0%;
+    top: 10%;
+    bottom: 0%;
+}
+footer {
+    box-sizing: border-box;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 92%;
+    bottom: 0%;
+}
+#mail {
+    vertical-align: text-bottom;
+}
+#linkedInIcon {
+    vertical-align: text-bottom;
+}
+.emailContact {
+    position: relative;
+    left: 32.5%;
+    right: 0%;
+    top: 25%;
+    bottom: 25%;
+}
+.linkedInContact {
+    position: relative;
+    left: 62.5%;
+    right: 0%;
+    top: 25%;
+    bottom: 25%;
+}
+/*.vertNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    position: fixed;
+    height: 100%;
+}*/
+/*.vertNavLink {
+    color: white;
+    font-family: 'fira sans condensed';
+    font-size: 16px;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
+}*/
+/* redlining step 1-1 */
+/*.step1-1 {
+    border: black dotted 3px;
+}*/
+#fuiContain1 {
+    position: absolute;
+    /*left: 10.34%;*/
+    left: 10.34vh;
+    /*right: 38.71%;*/
+    right: 480.78px;
+    /*top: 13.54%;*/
+    top: 0;
+    width: 328px;
+    /*height: 508px;*/
+    bottom: 2.21vh;
+}
+/*#fuiContain2 {
+    position: absolute;
+    left: 63.71%;
+    right: 9.84%;
+    top: 13.54%;
+    bottom: 2.21%
+}*/
+/*redlining step 1-2 */
+/*.step1-2 {
+    border: gray dotted 3px;
+}*/
+.fuiRadial {
+    position: absolute;
+    height: 180px;
+    /*left: 4.27%;
+    right: 4.27%;*/
+    left: 14px;
+    right: 14px;
+    top: 0;
+    /*bottom: 72.18%;*/
+    bottom: 467px;
+}
+.fuiCard {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 210px;
+    bottom: 2.21vh;
+    min-height: 300px;
+    max-height: 437px;
+    /*height: 300px;*/
+}
+/*redlining step 2 */
+/*.step2 {
+    border: yellow dotted 3px;
+}*/
+/*#logoContain {
+    position: absolute;
+    left: 0.25%;
+    right: 95.75%;
+    top: 0%;
+    bottom: 0%;
+    padding-top: 1%;
+    text-align: center;
+}*/
+#pageTitleContain {
+    position: absolute;
+    float: left;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    padding-left: 1%;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
+}
+#pageTitleContain #actionIconsContainer {
+    float: right;
+    height: 56px;
+}
+.actionIcon {
+    padding-top: 16px;
+    margin-right: 32px;
+    width: 24px;
+}
+.actionIcon:hover {
+    cursor: pointer;
+}
+span {
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 0.75);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: block;
+}
+.navLinkContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 304px;
+    height: 56px;
+    border-radius: 20px;
+}
+.navLinkContainer:hover {
+    cursor: pointer;
+    background: white;
+    border-radius: 20px;
+}
+.navLinkContainer:hover a {
+    color: #002A68;
+    filter: drop-shadow(0 0 0);
+}
+.navLinkContainer:hover span {
+    color: #002A68;
+    text-shadow: 0 0 0 rgb(0 0 0 / 0);
+}
+.navLinkContainer:hover svg {
+    filter: drop-shadow(0 0 0);
+}
+
+/*#navLinkContain1 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+#navLinkContain2 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 6.74%;
+    bottom: 0%;
+}
+#navLinkContain3 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 13.48%;
+    bottom: 0%;
+}
+#navLinkContain4 {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 20.22%;
+    bottom: 0%;
+}*/
+/*.fuiRadialBlockLarge {
+    position: absolute;
+    left: 0%;
+    right: 40%;
+    top: 0%;
+    bottom: 0%;
+}
+.fuiRadialBlockMed {
+    position: absolute;
+    left: 60%;
+    right: 0%;
+    top: 0%;
+    bottom: 33.33%;
+}
+.fuiRadialBlockSmall {
+    position: absolute;
+    left: 42.67%;
+    right: 22.67%;
+    top: 66.67%;
+    bottom: 0%;
+}*/
+.fuiCardInner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /*left: 7.2%;
+    right: 6.2%;
+    top: 5%;
+    bottom: 4.7%;*/
+    width: 279px;
+    /*height: 246px;*/
+    left: 24.5px;
+    top: 24.5px;
+    bottom: 28px;
+    border-radius: 5px;
+    background-color: rgba(0, 42, 104, 0.5);
+    outline: 3px solid white;
+    
+}
+#cardBorder {
+    position: absolute;
+    width: 278px;
+    bottom: 28px;
+    left: 24.5px;
+    top: 24.5px;
+    border-radius: 5px;
+    outline: 3px solid white;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+    z-index: -1;
+}
+/*.fuiCardContent {
+    position: relative;
+    width: 50%;
+}*/
+#cardText {
+    /*display: block;
+    padding-top: 5%;
+    width: 40%;*/
+    margin-left: 8.2%;
+    position: absolute;
+    top: 14px;
+    width: 214px;
+}  
+.cardButtons {
+    position: absolute;
+    top: 140px;
+    margin-left: 8.2%;
+}
+/*#viewResumeButtonIcon {
+    filter: drop-shadow(0 0 0);
+    position: relative;
+    vertical-align: sub;
+}
+#downloadResumeButtonIcon {
+    filter: none;
+    position: relative;
+    vertical-align: sub;
+}*/
+/* redlining step 3 */
+/*.step3 {
+    border: green dotted 3px;
+}*/
+/*#pageTitle {
+    left: 9.98%;
+    right: 3.92%;
+    top: 25%;
+    bottom: 25%;  
+}*/
+/*#actionIcon1 {
+    position: absolute;
+    left: 39.42%;
+    right: 51.82%;
+    top: 20%;
+    bottom: 25%; 
+}
+#actionIcon2 {
+    position: absolute;
+    left: 59%;
+    right: 40%;
+    top: 20%;
+    bottom: 25%; 
+}
+#actionIcon3 {
+    position: absolute;
+    left: 80.29%;
+    right: 10.95%;
+    top: 20%;
+    bottom: 25%; 
+}*/
+.LinkIcon {
+    position: absolute;
+    margin-left: 5.26%;
+    width: 24px;
+    height: 56px;
+    top: 25%;
+}
+.navLinkText {
+    position: absolute;
+    margin-left: 23.68%;
+    height: 24px;
+    top: 25%;
+    padding-top: 1%;
+    /*top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);*/
+}
+.buttonLinkIcon {
+    position: absolute;
+    left: 16px;
+    width: 18px;
+    height: 40px;
+    top: 0;
+    padding-top: 11px;
+}
+.buttonLinkIcon svg {
+    text-shadow: 0 0 0 rgb(0 0 0 / 0);
+    filter: drop-shadow(0 0 0 rgb(0 0 0/0));
+}
+.buttonLinkText {
+    position: absolute;
+    /*left: 23.68%;*/
+    left: 42px;
+    right: 24px;
+    margin-top: 9px;
+    filter: drop-shadow(0 0 0);
+}
+
+/*.navLinkIcon {
+    position: absolute;
+    left: 5.26%;
+    right: 86.84%;
+    top: 15%;
+    bottom: 25%; 
+}*/
+/*.navLinkTitle {
+    position: absolute;
+    left: 23.68%;
+    right: 26.97%;
+    top: 25%;
+    bottom: 25%; 
+}*/
+/*fuiDisc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}*/
+.fuiCardCornerNW {
+    position: absolute;
+    /*left: -3%;
+    right: 81.7%;
+    top: 0%;
+    bottom: 86.27%;*/
+    top: 0;
+    left: 0;
+}
+.fuiCardCornerNE {
+    position: absolute;
+    /*left: 81.7%;
+    right: -4.6%;
+    top: 0%;
+    bottom: 86.27%;*/
+    top: 0;
+    right: 0;
+}
+.fuiCardCornerSE {
+    position: absolute;
+    /*left: 81.7%;
+    right: -4.6%;
+    top: 86.27%;
+    bottom: 0%;*/
+    bottom: 0;
+    right: 0;
+}
+.fuiCardCornerSW {
+    position: absolute;
+    /*left: -3%;
+    right: 81.7%;
+    top: 86.27%;
+    bottom: 0%;*/
+    bottom: 0;
+    left: 0;
+}
+
+/* redlining step 4 */
+/*.fuiRadialBlockInner {
+    position: absolute;
+    left: 20.56%;
+    right: 20.56%;
+    top: 20.56%;
+    bottom: 20.56%;
+}*/
+/* redlining step 5 */
+/*.step5 {
+    border: purple dotted 3px;
+}*/
+/*.fuiDiscInner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}*/
+
+/* graphics */
+.material-symbols-rounded {
+    color: white;
+}
+.fuiImage {
+    width: 100%;
+    height: 100%;
+}
+
+/* fonts */
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    color: white;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+a {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: medium;
+    color: white;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+#primaryButtonText {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: medium;
+    color: #002A68;
+    text-align: center;
+}
+#secondaryButtonText {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: medium;
+    color: white;
+    text-align: center;
+}
+/*li a:hover {
+    color: #002A68;
+    filter: drop-shadow(0 0 0);
+}*/
+/*#myName {
+    font-size: 32px;
+    color: white;
+}*/
+#pageTitleContain h1 {
+    float: left;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 27px;
+    color: white;
+    margin-left: 5px;
+}
+.innerCardText {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 2%;
+}
