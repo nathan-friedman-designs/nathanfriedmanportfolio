@@ -3,7 +3,7 @@
     [class*="col-"] {
     width: 100%;
   }
-  nav {
+  .nav {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -97,14 +97,23 @@
 .col-l-12 {
   width: 100%;
 }
-  nav {
+  .nav {
   display: flex;
   flex-direction: column;
 }
 }
 
+/* unverisal mode */
 * {
   box-sizing: border-box;
+}
+body {
+    background-image: url("/graphics/portfolio_background.png");
+    background-size: cover;
+    background-position: 0% 25%;
+    background-color: #A8322D;
+    background-attachment: fixed;
+    cursor: crosshair;
 }
 [class*="col-"] {
   float: left;
@@ -120,10 +129,16 @@
   display: flex;
   flex-direction: row;
 }
-section {
+.body {
   display: flex;
   flex-direction: row;
 }
 .right {
   float: right;
+  display: flex;
+  flex-direction: row;
+}
+.brand {
+  display: flex;
+  flex-direction: row;
 }
