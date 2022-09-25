@@ -36,10 +36,36 @@
     padding-top: 8px;
     text-align: center;
   }
+  svg {
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
 a {
     text-decoration: none;
     font-family: 'Fira Sans Condensed';
     font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.actionIcon {
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+.actionTab {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    width: 100%;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+.actionTab i {
+    height: 100%;
+    width: 24px;
+    padding-top: 16px;
+}
+.actionTab a span {
+    color: white;
+}
+li a:link {
+    width: 100%;
 }
 i {
     color: white;
@@ -54,6 +80,7 @@ ul {
     flex-direction: row;
     height: 56px;
     width: 100%;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
   }
 .navTab i {
     height: 100%;
@@ -68,6 +95,12 @@ li a:link {
 }
 .right .menu {
     display: none;
+}
+#copyright {
+    font-size: 12px;
+    margin-left: 20px;
+    font-family: 'Comfortaa';
+    color: white;
 }
 /* compact mode */
 @media only screen and (max-width: 599.9px) {
@@ -99,8 +132,18 @@ li a:link {
   }
   .right .menu {
     display: inline-block;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
 .right .actionIcon {
+    display: none;
+}
+hr {
+    display: none;
+}
+.actionTab {
+    display: none;
+}
+#copyright {
     display: none;
 }
 }
@@ -116,6 +159,9 @@ li a:link {
   .navTab {
     width: 100%;
     text-align: left;
+  }
+  .actionTab i {
+    margin-left: 16px;
   }
   .col-m-1 { 
   width: 8.33%;
@@ -153,6 +199,12 @@ li a:link {
   .col-m-12 {
     width: 100%;
   }
+  .actionTab {
+    display: block;
+  }
+  .actionTitle {
+    display: none;
+  }
 }
 /* expanded mode */
 @media only screen and (min-width: 840px) {
@@ -170,6 +222,33 @@ li a:link {
     width: 100%;
     text-align: left;
   }
+  .actionTab {
+    width: 100%;
+    text-align: left;
+  }
+  .actionTab a span {
+    color: white;
+    }
+    .actionTab i {
+        margin-left: 16px;
+      }
+  .actionTitle {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed';
+    font-size: 12px;
+    color: white;
+    height: 56px;
+    padding-top: 12px;
+    margin-left: 12px;
+    width: 8.33%;
+}
+#copyright {
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 6%;
+}
 .col-l-1 { 
   width: 8.33%;
 }
