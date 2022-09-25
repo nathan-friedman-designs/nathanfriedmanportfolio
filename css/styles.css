@@ -65,6 +65,7 @@
       background-color: #A8322D;
       background-attachment: fixed;
       top: 0;
+      z-index: 1;
   }
   .nav {
     position: fixed;
