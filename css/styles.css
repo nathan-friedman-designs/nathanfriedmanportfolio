@@ -10,6 +10,21 @@
       background-attachment: fixed;
       cursor: crosshair;
   }
+  ::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-track {
+    background-color: #A8322D;
+}
+::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: 2px 2px 4px rgb(0 0 0/0.75); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
   [class*="col-"] {
     float: left;
     padding: 16px;
@@ -21,7 +36,26 @@
   }
   .body {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 72px;
+  }
+  .fuiContainer-left {
+    flex: 50%;
+    outline: 3px white dotted;
+  }
+  .fuiContainer-right {
+    flex: 50%;
+    outline: 3px white dotted;
+  }
+  .fuiContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 328px;
+    height: 508px;
+    bottom: 2.21vh;
+    outline: 3px yellow dashed;
   }
   .topRow {
     position: fixed;
@@ -30,15 +64,20 @@
       background-position: 0% 25%;
       background-color: #A8322D;
       background-attachment: fixed;
+      top: 0;
+  }
+  .navAndBody {
+    outline: 3px white dotted;
   }
   .nav {
     position: fixed;
     margin-top: 80px;
     width: 25%;
+    margin-top: 72px;
     z-index: 1;
   }
   .navSubstitute {
-    margin-top: 64px;
+    margin-top: 72px;
     height: 100%;
     visibility: hidden;
   }
@@ -152,13 +191,17 @@ li a:link {
     font-family: 'Comfortaa';
     color: white;
 }
-#fuiContainerHome {
-    /*left: 10.34%;*/
+.fuiContainer1 {
     left: 34.84vw;
-    /*right: 38.71%;*/
     right: 480.78px;
-    /*top: 13.54%;*/
-    margin-top: 72px;
+    width: 328px;
+    height: 508px;
+    bottom: 2.21vh;
+    outline: 3px white dotted;
+}
+.fuiContainer2 {
+    left: 63.71vw;
+    /*right: 480.78px;*/
     width: 328px;
     height: 508px;
     bottom: 2.21vh;
@@ -222,6 +265,10 @@ hr {
 #copyright {
     display: none;
 }
+.body {
+    margin-top: -32px;
+    margin-bottom: 64px;
+}
 }
 
 /* medium mode */
@@ -239,6 +286,10 @@ hr {
   .nav {
     width: 16.66%;
   }
+  .body {
+    display: flex;
+    flex-direction: column;
+}
   .navSubstitute {
     width: 100%;
   }
@@ -331,6 +382,10 @@ hr {
     margin-left: 20px;
     margin-top: 6%;
 }
+.body {
+    display: flex;
+    flex-direction: row;
+  }
 .col-l-1 { 
   width: 8.33%;
 }
