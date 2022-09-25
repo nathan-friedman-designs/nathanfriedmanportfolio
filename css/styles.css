@@ -45,7 +45,19 @@ a {
     font-size: 18px;
     letter-spacing: 1px;
 }
-
+.navTab:hover {
+    background: white;
+    border-radius: 20px;
+    z-index: -1;
+}
+.navTab:hover i {
+    color: #002A68;
+    filter: drop-shadow(0 0 0);
+}
+.navTab:hover span {
+    color: #002A68;
+    filter: drop-shadow(0 0 0);
+}
 .actionIcon {
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
