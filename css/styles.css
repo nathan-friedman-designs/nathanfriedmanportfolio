@@ -1,3 +1,60 @@
+/* universal mode */
+* {
+    box-sizing: border-box;
+  }
+  body {
+      background-image: url("/graphics/portfolio_background.png");
+      background-size: cover;
+      background-position: 0% 25%;
+      background-color: #A8322D;
+      background-attachment: fixed;
+      cursor: crosshair;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 16px;
+    border: 1px solid red;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .body {
+    display: flex;
+    flex-direction: row;
+  }
+  .right {
+    float: right;
+    display: flex;
+    flex-direction: row;
+  }  
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navTab {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+  }
+  .navTab i {
+    height: 100%;
+    width: 24px;
+    outline: 3px white dotted;
+}
+.navTab span {
+    height: 100%;
+    outline: 3px white dotted;
+}
+li a:link {
+    width: 100%;
+    outline: 3px white dotted;
+}
 /* compact mode */
 @media only screen and (max-width: 599px) {
     [class*="col-"] {
@@ -5,9 +62,16 @@
   }
   .nav {
     position: fixed;
+    bottom: 0;
+  }
+  ul {
     display: flex;
     flex-direction: row;
-    bottom: 0;
+    width: 100%;
+  }
+  .navTab {
+    width: 100%;
+    text-align: center;
   }
   .navTabTitle {
     display: none;
@@ -97,44 +161,5 @@
 .col-l-12 {
   width: 100%;
 }
-  .nav {
-  display: flex;
-  flex-direction: column;
-}
 }
 
-/* unverisal mode */
-* {
-  box-sizing: border-box;
-}
-body {
-    background-image: url("/graphics/portfolio_background.png");
-    background-size: cover;
-    background-position: 0% 25%;
-    background-color: #A8322D;
-    background-attachment: fixed;
-    cursor: crosshair;
-}
-[class*="col-"] {
-  float: left;
-  padding: 16px;
-  border: 1px solid red;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.navTab {
-  display: flex;
-  flex-direction: row;
-}
-.body {
-  display: flex;
-  flex-direction: row;
-}
-.right {
-  float: right;
-  display: flex;
-  flex-direction: row;
-}
