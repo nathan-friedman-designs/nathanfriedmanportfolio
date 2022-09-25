@@ -66,9 +66,6 @@
       background-attachment: fixed;
       top: 0;
   }
-  .navAndBody {
-    outline: 3px white dotted;
-  }
   .nav {
     position: fixed;
     margin-top: 80px;
