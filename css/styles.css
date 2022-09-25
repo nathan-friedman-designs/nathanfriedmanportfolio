@@ -28,7 +28,6 @@
     display: flex;
     flex-direction: row;
     width: 144px;
-    height: 100%;
   }  
   .right i {
     width: 48px;
@@ -48,7 +47,6 @@ a {
 .navTab:hover {
     background: white;
     border-radius: 20px;
-    z-index: -1;
 }
 .navTab:hover i {
     color: #002A68;
@@ -61,6 +59,20 @@ a {
 .actionIcon {
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
+.actionIcon:hover {
+    cursor: pointer;
+    background: none;
+    outline: 3px white solid;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+.menu:hover {
+    cursor: pointer;
+    background: none;
+    outline: 3px white solid;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
 .actionTab {
     display: flex;
     flex-direction: row;
@@ -69,9 +81,18 @@ a {
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
   }
 .actionTab i {
-    height: 100%;
+    height: 56px;
     width: 24px;
+    padding-bottom: 16px;
     padding-top: 16px;
+}
+.actionTab:hover {
+    cursor: pointer;
+    background: none;
+    border-radius: 20px;
+    color: #002A68;
+    outline: 3px white solid;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
 .actionTab a span {
     color: white;
