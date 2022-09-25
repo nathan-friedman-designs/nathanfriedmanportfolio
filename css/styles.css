@@ -30,6 +30,8 @@
   }  
 a {
     text-decoration: none;
+    font-family: 'Fira Sans Condensed';
+    font-size: 18px;
 }
 ul {
     list-style-type: none;
@@ -40,22 +42,22 @@ ul {
     display: flex;
     flex-direction: row;
     height: 56px;
+    width: 100%;
   }
   .navTab i {
     height: 100%;
     width: 24px;
-    outline: 3px white dotted;
+    padding-top: 16px;
+    color: white;
 }
-.navTab span {
-    height: 100%;
-    outline: 3px white dotted;
+.navTab a span {
+    color: white;
 }
 li a:link {
     width: 100%;
-    outline: 3px white dotted;
 }
 /* compact mode */
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 599.9px) {
     [class*="col-"] {
     width: 100%;
   }
@@ -75,12 +77,23 @@ li a:link {
   .navTabTitle {
     display: none;
   }
+  .navTab i {
+    margin-left: 0;
+    height: 100%;
+  }
 }
 
 /* medium mode */
 @media only screen and (min-width: 600px) {
     .navTabTitle {
     display: none;
+  }
+  .navTab i {
+    margin-left: 16px;
+  }
+  .navTab {
+    width: 100%;
+    text-align: left;
   }
   .col-m-1 { 
   width: 8.33%;
@@ -123,6 +136,17 @@ li a:link {
 @media only screen and (min-width: 840px) {
   .navTabTitle {
     display: inline-block;
+    position: absolute;
+    height: 56px;
+    padding-top: 18px;
+    margin-left: 12px;
+  }
+  .navTab i {
+    margin-left: 16px;
+  }
+  .navTab {
+    width: 100%;
+    text-align: left;
   }
 .col-l-1 { 
   width: 8.33%;
