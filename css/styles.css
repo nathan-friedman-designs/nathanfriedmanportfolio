@@ -27,11 +27,22 @@
     float: right;
     display: flex;
     flex-direction: row;
+    width: 144px;
+    height: 100%;
   }  
+  .right i {
+    width: 48px;
+    height: 48px;
+    padding-top: 8px;
+    text-align: center;
+  }
 a {
     text-decoration: none;
     font-family: 'Fira Sans Condensed';
     font-size: 18px;
+}
+i {
+    color: white;
 }
 ul {
     list-style-type: none;
@@ -44,17 +55,19 @@ ul {
     height: 56px;
     width: 100%;
   }
-  .navTab i {
+.navTab i {
     height: 100%;
     width: 24px;
     padding-top: 16px;
-    color: white;
 }
 .navTab a span {
     color: white;
 }
 li a:link {
     width: 100%;
+}
+.right .menu {
+    display: none;
 }
 /* compact mode */
 @media only screen and (max-width: 599.9px) {
@@ -81,6 +94,15 @@ li a:link {
     margin-left: 0;
     height: 100%;
   }
+  .right {
+    width: 48px;
+  }
+  .right .menu {
+    display: inline-block;
+}
+.right .actionIcon {
+    display: none;
+}
 }
 
 /* medium mode */
