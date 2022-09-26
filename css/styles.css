@@ -42,21 +42,61 @@
   }
   .fuiContainer-left {
     flex: 50%;
-    outline: 3px white dotted;
+    margin-bottom: 3vh;
   }
   .fuiContainer-right {
     flex: 50%;
-    outline: 3px white dotted;
+    margin-bottom: 3vh;
   }
   .fuiContainer {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 328px;
-    height: 508px;
+    height: 647px;
     bottom: 2.21vh;
-    outline: 3px yellow dashed;
   }
+  .fuiRingSet {
+    width: 300px;
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.fuiCardOuter {
+    position: relative;
+    width: 328px;
+    height: 437px;
+    margin-top: 30px;
+}
+.fuiCardCornerNW {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+}
+.fuiCardCornerNE {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+}
+.fuiCardCornerSE {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    right: 0;
+}
+.fuiCardCornerSW {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+}
   .topRow {
     position: fixed;
     background-image: url("/graphics/portfolio_background.png");
@@ -105,11 +145,11 @@ a {
     border-radius: 20px;
 }
 .navTab:hover i {
-    color: #002A68;
+    color: rgba(17.6, 65.9, 34.5, 0.75);
     filter: drop-shadow(0 0 0);
 }
 .navTab:hover span {
-    color: #002A68;
+    color: rgba(17.6, 65.9, 34.5, 0.75);
     filter: drop-shadow(0 0 0);
 }
 .actionIcon {
@@ -189,21 +229,58 @@ li a:link {
     font-family: 'Comfortaa';
     color: white;
 }
-.fuiContainer1 {
-    left: 34.84vw;
-    right: 480.78px;
+.fuiCardOuter {
+    position: relative;
     width: 328px;
-    height: 508px;
-    bottom: 2.21vh;
-    outline: 3px white dotted;
+    height: 437px;
 }
-.fuiContainer2 {
-    left: 63.71vw;
-    /*right: 480.78px;*/
-    width: 328px;
-    height: 508px;
-    bottom: 2.21vh;
-    outline: 3px white dotted;
+.fuiCardInner {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 280px;
+    height: 390px;
+    border: 3.5px white solid;
+    border-radius: 10px;
+    background-color: rgba(17.6, 65.9, 34.5, 0.75);
+}
+.fuiCardInnerShadow {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 280px;
+    height: 390px;
+    border: 3.5px white solid;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.5));
+}
+.fuiCardCornerNW {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+}
+.fuiCardCornerNE {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+}
+.fuiCardCornerSE {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    right: 0;
+}
+.fuiCardCornerSW {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    left: 0;
 }
 /* compact mode */
 @media only screen and (max-width: 599.9px) {
