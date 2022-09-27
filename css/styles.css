@@ -9,7 +9,7 @@
       background-color: #A8322D;
       background-attachment: fixed;
       cursor: crosshair;
-  }
+}
   ::-webkit-scrollbar {
     width: 16px;
 }
@@ -53,8 +53,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 328px;
-    height: 647px;
-    bottom: 2.21vh;
+    min-height: 647px;
+    outline: 3px white dotted;
   }
   .fuiRingSet {
     width: 300px;
@@ -63,40 +63,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-.fuiCardOuter {
-    position: relative;
-    width: 328px;
-    height: 437px;
-    margin-top: 30px;
-}
-.fuiCardCornerNW {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    left: 0;
-}
-.fuiCardCornerNE {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    right: 0;
-}
-.fuiCardCornerSE {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    bottom: 0;
-    right: 0;
-}
-.fuiCardCornerSW {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    bottom: 0;
-    left: 0;
-}
   .topRow {
     position: fixed;
     background-image: url("/graphics/portfolio_background.png");
@@ -232,28 +198,24 @@ li a:link {
 .fuiCardOuter {
     position: relative;
     width: 328px;
-    height: 437px;
+    min-height: 437px;
+    bottom: 0;
+    outline: 3px blue dotted;
 }
 .fuiCardInner {
     position: absolute;
+    display: block;
     top: 24px;
     left: 24px;
+    bottom: 5.25%;
     width: 280px;
-    height: 390px;
+    /*min-height: 390px;*/
+    /*height: fit-content;*/
     border: 3.5px white solid;
     border-radius: 10px;
     background-color: rgba(17.6, 65.9, 34.5, 0.75);
 }
-.fuiCardInnerShadow {
-    position: absolute;
-    top: 24px;
-    left: 24px;
-    width: 280px;
-    height: 390px;
-    border: 3.5px white solid;
-    border-radius: 10px;
-    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.5));
-}
+
 .fuiCardCornerNW {
     position: absolute;
     width: 60px;
@@ -312,12 +274,12 @@ button i {
 .buttonPrimary {
   background-color: white;
   border: none;
-  color: rgba(17.6, 65.9, 34.5, 0.75);
+  color: rgba(17.6, 65.9, 34.5, 1);
   margin-left: 8.2%;
   border-radius: 20px;
 }
 .buttonPrimary i {
-  color: rgba(17.6, 65.9, 34.5, 0.75);
+  color: rgba(17.6, 65.9, 34.5, 1);
 }
 .buttonSecondary {
   background: none;
