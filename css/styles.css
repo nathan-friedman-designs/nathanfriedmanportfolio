@@ -294,65 +294,38 @@ p {
   color: white;
   filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
-.button {
-  position: relative;
-  width: 214px;
+button {
+  cursor: pointer;
   height: 40px;
+  width: 214px;
   margin-bottom: 5%;
   border-radius: 20px;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
-.cardButton {
-  display: block;
-  margin-left: 8.2%;
-  height: 40px;
-  text-align: center;
+button i {
+  vertical-align: sub;
 }
 .buttonPrimary {
-  cursor: pointer;
-  display: block;
-  background: white;
+  background-color: white;
+  border: none;
+  color: rgba(17.6, 65.9, 34.5, 0.75);
+  margin-left: 8.2%;
   border-radius: 20px;
-  height: 100%;
-  width: 100%;
 }
 .buttonPrimary i {
-  height: 40px;
-  width: 24px;
-  padding-bottom: 8px;
-  padding-top: 8px;
-  color: rgba(17.6, 65.9, 34.5, 0.75);
-}
-.buttonPrimaryTitle {
-  display: inline-block;
-  position: absolute;
-  height: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: rgba(17.6, 65.9, 34.5, 0.75);
 }
 .buttonSecondary {
-  cursor: pointer;
   background: none;
-  display: block;
-  border-radius: 20px;
-  height: 100%;
-  width: 100%;
+  border: none;
   outline: 3px white solid;
-  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
-}
-.buttonSecondary i {
-  height: 40px;
-  width: 24px;
-  padding-bottom: 8px;
-  padding-top: 8px;
-}
-.buttonSecondaryTitle {
-  display: inline-block;
-  position: absolute;
-  height: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: white;
+  margin-left: 8.2%;
+  border-radius: 20px;
 }
 /* compact mode */
 @media only screen and (max-width: 599.9px) {
