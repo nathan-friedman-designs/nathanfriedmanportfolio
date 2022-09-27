@@ -283,11 +283,10 @@ li a:link {
     left: 0;
 }
 .cardText {
-  position: absolute;
+  display: block;
   margin-left: 8.2%; 
   top: 14px;
   width: 214px;
-  height: 50%;
 }
 p {
   font-family: 'Nunito Sans', sans-serif;
@@ -303,14 +302,14 @@ p {
   border-radius: 20px;
 }
 .cardButton {
-  position: absolute;
-  top: 140px;
+  display: block;
   margin-left: 8.2%;
   height: 40px;
-  text-align: left;
+  text-align: center;
 }
 .buttonPrimary {
   cursor: pointer;
+  display: block;
   background: white;
   border-radius: 20px;
   height: 100%;
@@ -321,7 +320,6 @@ p {
   width: 24px;
   padding-bottom: 8px;
   padding-top: 8px;
-  padding-left: 16px;
   color: rgba(17.6, 65.9, 34.5, 0.75);
 }
 .buttonPrimaryTitle {
@@ -330,13 +328,12 @@ p {
   height: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 24px;
   color: rgba(17.6, 65.9, 34.5, 0.75);
 }
 .buttonSecondary {
-  margin-top: 60px;
   cursor: pointer;
   background: none;
+  display: block;
   border-radius: 20px;
   height: 100%;
   width: 100%;
@@ -348,7 +345,6 @@ p {
   width: 24px;
   padding-bottom: 8px;
   padding-top: 8px;
-  padding-left: 16px;
 }
 .buttonSecondaryTitle {
   display: inline-block;
@@ -356,7 +352,6 @@ p {
   height: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 24px;
   color: white;
 }
 /* compact mode */
