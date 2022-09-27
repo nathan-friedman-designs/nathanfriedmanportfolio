@@ -199,24 +199,19 @@ li a:link {
     position: relative;
     width: 328px;
     min-height: 437px;
-    height: fit-content;
-    bottom: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
     outline: 3px blue dotted;
 }
 .fuiCardInner {
-    position: absolute;
-    display: block;
-    top: 24px;
-    left: 24px;
-    bottom: 5.25%;
+    margin: 0 auto;
     width: 280px;
-    /*min-height: 390px;*/
-    /*height: fit-content;*/
+    min-height: 390px;
     border: 3.5px white solid;
     border-radius: 10px;
     background-color: rgba(17.6, 65.9, 34.5, 0.75);
 }
-
+/* for fuiCardOuter and fuiCardInner selectors, some edits to position, display, margin, height, and padding provided by Farshad Vaghari on StackOverflow*/
 .fuiCardCornerNW {
     position: absolute;
     width: 60px;
