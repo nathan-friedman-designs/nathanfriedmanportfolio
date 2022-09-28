@@ -54,7 +54,6 @@
     margin-right: auto;
     width: 328px;
     min-height: 647px;
-    outline: 3px white dotted;
   }
   .fuiRingSet {
     width: 300px;
@@ -201,7 +200,6 @@ li a:link {
     min-height: 437px;
     padding-top: 24px;
     padding-bottom: 24px;
-    outline: 3px blue dotted;
 }
 .fuiCardInner {
     margin: 0 auto;
