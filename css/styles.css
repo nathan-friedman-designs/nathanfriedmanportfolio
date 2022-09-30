@@ -105,6 +105,16 @@ a {
     font-size: 18px;
     letter-spacing: 1px;
 }
+.hover-only {
+  display: none;
+}
+.navTab img {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 16px;
+  left: 50px;
+}
 .navTab:hover {
     background: white;
     border-radius: 20px;
@@ -300,6 +310,14 @@ button i {
   }
   .nav ul li {
     height: 64px;
+  }
+  .nav svg {
+    position: absolute;
+    top: 16px;
+    left: 50px;
+  }
+  .navTab:hover img.hover-only {
+    display: block;
   }
   .navSubstitute {
     bottom: 0;
