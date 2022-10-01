@@ -3,20 +3,20 @@
 
 <svg
    version="1.1"
-   id="svg132"
-   width="793.70081"
-   height="1122.5197"
-   viewBox="0 0 793.70081 1122.5197"
-   sodipodi:docname="sprout.png"
+   id="svg2"
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   sodipodi:docname="sprout (1).png"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs136" />
+     id="defs6" />
   <sodipodi:namedview
-     id="namedview134"
+     id="namedview4"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
@@ -28,7 +28,7 @@
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
-     id="g138">
+     id="g8">
     <image
        width="512"
        height="512"
@@ -431,10 +431,10 @@ Q4bQ9+hBr22MRUREYoasVIlcs8Z6qN8rI4McOpQ8/3z6kiWt6yMiIpKw6M8+m/TebtDPySHHjSP7
 IiIi2PNo4IABsR/0f/mFfO45slUr6zaKiIhIHsgLLiBXrSrcoL9mTTDot2tn3R4RERHJJ/oKFci7
 7ybXrs3/oL9lC/nGG/RnnUWmpFi3QURE5HC0sUwegufvO3WC694daNUKaNQIqFwZIIENG4AVK4Dx
 48Gvv4b77jvndu+2ziwiIpJf/w/RvlS8nC9ZJwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0xMC0w
-MVQxNTozOToxMyswMDowMPFWAAgAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMTAtMDFUMTU6Mzk6
-MTMrMDA6MDCAC7i0AAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIyLTEwLTAxVDE1OjM5OjEzKzAw
-OjAw1x6ZawAAAABJRU5ErkJggg==
+MVQyMjoxNjoxNiswMDowMAsb7mAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMTAtMDFUMjI6MTY6
+MTYrMDA6MDB6RlbcAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIyLTEwLTAxVDIyOjE2OjE2KzAw
+OjAwLVN3AwAAAABJRU5ErkJggg==
 "
-       id="image140" />
+       id="image10" />
   </g>
 </svg>
