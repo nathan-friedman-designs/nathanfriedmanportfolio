@@ -108,25 +108,6 @@ a {
 .hover-only {
   display: none;
 }
-.navTab img {
-  position: absolute;
-  height: 24px;
-  width: 24px;
-  top: 16px;
-  left: 50px;
-}
-.navTab:hover {
-    background: white;
-    border-radius: 20px;
-}
-.navTab:hover i {
-    color: rgba(17.6, 65.9, 34.5, 0.75);
-    filter: drop-shadow(0 0 0);
-}
-.navTab:hover span {
-    color: rgba(17.6, 65.9, 34.5, 0.75);
-    filter: drop-shadow(0 0 0);
-}
 .actionIcon {
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
@@ -194,6 +175,25 @@ ul {
 }
 .navTab a span {
     color: white;
+}
+.navTab img {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 16px;
+  left: 50px;
+}
+.navTab:hover {
+    background: white;
+    border-radius: 20px;
+}
+.navTab:hover img {
+    color: rgba(17.6, 65.9, 34.5, 0.75);
+    filter: drop-shadow(0 0 0);
+}
+.navTab:hover span {
+    color: rgba(17.6, 65.9, 34.5, 0.75);
+    filter: drop-shadow(0 0 0);
 }
 li a:link {
     width: 100%;
