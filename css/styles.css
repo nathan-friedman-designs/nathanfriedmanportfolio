@@ -181,7 +181,7 @@ ul {
   height: 24px;
   width: 24px;
   top: 16px;
-  left: 50px;
+  left: 44px;
 }
 .navTab:hover {
     background: white;
@@ -316,18 +316,6 @@ button i {
     top: 16px;
     left: 50px;
   }
-  .navTab:hover img.hover-only {
-    display: block;
-  }
-  .navSubstitute {
-    bottom: 0;
-    width: 100%;
-  }
-  ul {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
   .navTab {
     width: 100%;
     height: 100%;
@@ -339,6 +327,18 @@ button i {
   .navTab i {
     margin-left: 0;
     height: 100%;
+  }
+  .navTab:hover img.hover-only {
+    display: block;
+  }
+  .navSubstitute {
+    bottom: 0;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
   .right {
     width: 48px;
@@ -367,7 +367,13 @@ hr {
 
 /* medium mode */
 @media only screen and (min-width: 600px) {
-    .navTabTitle {
+  .nav {
+    width: 16.66%;
+  } 
+  .navSubstitute {
+    width: 100%;
+  } 
+  .navTabTitle {
     display: none;
   }
   .navTab i {
@@ -377,16 +383,20 @@ hr {
     width: 100%;
     text-align: left;
   }
-  .nav {
-    width: 16.66%;
+  .navTab img {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 16px;
+    left: 38px;
+  }
+  .navTab:hover img.hover-only {
+    display: block;
   }
   .body {
     display: flex;
     flex-direction: column;
 }
-  .navSubstitute {
-    width: 100%;
-  }
   .actionTab i {
     margin-left: 16px;
   }
