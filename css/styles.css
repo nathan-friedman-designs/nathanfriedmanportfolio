@@ -105,7 +105,7 @@ a {
     font-size: 18px;
     letter-spacing: 1px;
 }
-.hover-only {
+.hovered {
   display: none;
 }
 .actionIcon {
@@ -328,7 +328,7 @@ button i {
     margin-left: 0;
     height: 100%;
   }
-  .navTab:hover img.hover-only {
+  .navTab:hover img.hovered {
     display: block;
   }
   .navSubstitute {
@@ -390,7 +390,7 @@ hr {
     top: 16px;
     left: 38px;
   }
-  .navTab:hover img.hover-only {
+  .navTab:hover img.hovered {
     display: block;
   }
   .body {
