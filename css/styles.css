@@ -22,6 +22,13 @@
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
 }
+embed {
+  display: block;
+  width: 75%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
   ::-webkit-scrollbar {
     width: 16px;
 }
@@ -303,7 +310,14 @@ p {
   outline: 3px white solid;
   color: white;
   margin-left: 8.2%;
+  padding-left: 8.2%;
   border-radius: 20px;
+}
+.buttonSecondary a {
+  color: white;
+}
+.buttonSecondary a:hover {
+  cursor: pointer;
 }
 .buttonPrimary span {
   position: absolute;
