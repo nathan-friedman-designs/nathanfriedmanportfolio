@@ -169,7 +169,7 @@ embed {
   border: 3.5px white solid;
     border-radius: 10px;
     background-color: rgba(17.6, 65.9, 34.5, 0.75);
-  min-width: 300px;
+  min-width: 25%;
   right: 0;
   z-index: 2;
   }
@@ -178,12 +178,12 @@ embed {
   position: absolute;
   margin-top: 4px;
   background-image: url("/graphics/portfolio_background.png");
-      background-position: 50% 25%;
+      background-position: 0% 25%;
       background-repeat: no-repeat;
       background-size: cover;
       background-color: #A8322D;
       background-attachment: fixed;
-  min-width: 300px;
+  min-width: 25%;
   border-radius: 10px;
   right: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -201,15 +201,29 @@ embed {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 12px;
     color: white;
-    margin-right: 64px;
+    margin-right: 180px;
+    margin-left: 20px;
+  }
+  .dropdownContent .menuCompact-plus {
+    display: none;
+  }
+  .dropdownContent hr {
+    display: none;
+  }
+  .dropdownContent2 .menuCompact-plus {
+    display: none;
+  }
+  .dropdownContent2 hr {
+    display: none;
   }
   .menuTab {
     display: flex;
     flex-direction: row;
     height: 56px;
     width: 100%;
+    line-height: 28px;
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
-  }
+    }
   .menuTab img {
     position: absolute;
     height: 24px;
@@ -218,24 +232,15 @@ embed {
     left: 44px;
   }
   .menuTab:hover {
-    cursor: pointer;
-    background: none;
-    border-radius: 50px;
-    outline: 3px white solid;
-    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
-}
-.menuTitle {
-  display: inline-block;
-  position: absolute;
-  text-decoration: none;
-  font-family: 'Fira Sans Condensed';
-  font-size: 12px;
-  color: white;
-  height: 56px;
-  padding-top: 12px;
-  margin-left: 12px;
-  margin-right: 16px;
-}
+      cursor: pointer;
+      background: none;
+      border-radius: 50px;
+      outline: 3px white solid;
+      filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+  .menuTab a span {
+      color: white;
+  }
   .dropdownContent2 a {
     visibility: hidden;
     padding: 12px 16px;
@@ -572,6 +577,59 @@ hr {
 .actionTab {
     display: none;
 }
+.dropdownContent .menuCompact-plus {
+  display: block;  
+  width: 100%;
+    text-align: left;
+}
+.dropdownContent hr {
+  display: block;  
+  width: 100%;
+}
+.dropdownContent2 .menuCompact-plus {
+  display: block;  
+  width: 100%;
+    text-align: left;
+}
+.dropdownContent2 hr {
+  display: block;  
+  width: 100%;
+}
+.menuTab {
+  width: 100%;
+  text-align: left;
+}
+.menuTab a span {
+  color: white;
+  }
+  .menuTab img.enabled {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    top: 12px;
+  }
+.menuTab img.activated {
+  display: none;
+}
+.menuTab:active img.enabled {
+  display: none;
+}
+.menuTab:active img.activated {
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  top: 12px;
+}
+.menuTitle {
+  display: inline-block;
+  position: absolute;
+  text-decoration: none;
+  font-family: 'Fira Sans Condensed';
+  font-size: 12px;
+  color: white;
+  height: 56px;
+  margin-left: 48px;
+}
 #copyright {
     display: none;
 }
@@ -629,6 +687,44 @@ hr {
   .navTab:active img.hovered {
     display: none;
   }
+  .menuTab {
+    width: 100%;
+    text-align: left;
+  }
+  .menuTab .compact-plus {
+    display: none;
+  }
+  .menuTab a span {
+    color: white;
+    }
+    .menuTab img.enabled {
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      top: 12px;
+    }
+  .menuTab img.activated {
+    display: none;
+  }
+  .menuTab:active img.enabled {
+    display: none;
+  }
+  .menuTab:active img.activated {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    top: 12px;
+  }
+  .menuTitle {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed';
+    font-size: 12px;
+    color: white;
+    height: 56px;
+    margin-left: 48px;
+}
 .actionTab {
     width: 100%;
     text-align: left;
@@ -739,6 +835,41 @@ hr {
     padding-top: 18px;
     left: 56px;
   }
+  .menuTab {
+    width: 100%;
+    text-align: left;
+  }
+  .menuTab a span {
+    color: white;
+    }
+    .menuTab img.enabled {
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      top: 12px;
+    }
+  .menuTab img.activated {
+    display: none;
+  }
+  .menuTab:active img.enabled {
+    display: none;
+  }
+  .menuTab:active img.activated {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    top: 12px;
+  }
+  .menuTitle {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed';
+    font-size: 12px;
+    color: white;
+    height: 56px;
+    margin-left: 48px;
+}
   .actionTab {
     width: 100%;
     text-align: left;
