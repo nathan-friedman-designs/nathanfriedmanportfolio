@@ -608,6 +608,22 @@ hr {
   .actionTab a span {
     color: white;
     }
+    .actionTab img.enabled {
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+    }
+  .actionTab img.activated {
+    display: none;
+  }
+  .actionTab:active img.enabled {
+    display: none;
+  }
+  .actionTab:active img.activated {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+  }
   .actionTitle {
     display: inline-block;
     position: absolute;
