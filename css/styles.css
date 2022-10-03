@@ -419,8 +419,14 @@ p {
   .right {
     width: 48px;
   }
-.right .actionIcon {
+.right .viewResume {
     display: none;
+}
+.right .downloadResume {
+  display: none;
+}
+.actionIcon .more {
+  display: block;
 }
 hr {
     display: none;
