@@ -109,6 +109,9 @@ a {
   display: none;
 }
 .actionIcon {
+  height: 24px;
+  width: 24px;
+  top: 16px;
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
 .actionIcon:hover {
@@ -126,17 +129,23 @@ a {
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
 .actionTab {
-    display: flex;
-    flex-direction: row;
-    height: 56px;
-    width: 100%;
-    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+  width: 100%;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
   }
-.actionTab i {
-    height: 56px;
-    width: 24px;
-    padding-bottom: 16px;
-    padding-top: 16px;
+.actionTab img {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 16px;
+  left: 44px;
+}
+.actionTab img.enabled {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
 }
 .actionTab:hover {
     cursor: pointer;
@@ -168,11 +177,6 @@ ul {
     width: 100%;
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
   }
-.navTab i {
-    height: 100%;
-    width: 24px;
-    padding-top: 16px;
-}
 .navTab a span {
     color: white;
 }
@@ -311,25 +315,27 @@ button i {
   .nav ul li {
     height: 64px;
   }
-  .nav svg {
-    position: absolute;
-    top: 16px;
-    left: 50px;
-  }
   .navTab {
     width: 100%;
     height: 100%;
     text-align: center;
   }
+  .navTab img.enabled {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .navTabTitle {
     display: none;
+  }
+  .navTab:hover img.hovered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .navTab i {
     margin-left: 0;
     height: 100%;
-  }
-  .navTab:hover img.hovered {
-    display: block;
   }
   .navSubstitute {
     bottom: 0;
@@ -383,15 +389,15 @@ hr {
     width: 100%;
     text-align: left;
   }
-  .navTab img {
-    position: absolute;
-    height: 24px;
-    width: 24px;
-    top: 16px;
-    left: 38px;
+  .navTab img.enabled {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .navTab:hover img.hovered {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .body {
     display: flex;
@@ -445,30 +451,34 @@ hr {
 }
 /* expanded mode */
 @media only screen and (min-width: 840px) {
+  .navTab {
+    width: 100%;
+    text-align: left;
+  }
+  .navTab img.enabled {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+  }
+  .navTab:hover img.hovered {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+  }
   .navTabTitle {
     display: inline-block;
     position: absolute;
     height: 56px;
     padding-top: 18px;
-    margin-left: 12px;
-  }
-  .navTab i {
-    margin-left: 16px;
-  }
-  .navTab {
-    width: 100%;
-    text-align: left;
+    left: 56px;
   }
   .actionTab {
-    width: 100%;
+    wwidth: 100%;
     text-align: left;
   }
   .actionTab a span {
     color: white;
     }
-    .actionTab i {
-        margin-left: 16px;
-      }
   .actionTitle {
     display: inline-block;
     position: absolute;
@@ -478,7 +488,7 @@ hr {
     color: white;
     height: 56px;
     padding-top: 12px;
-    margin-left: 12px;
+    margin-left: 56px;
     width: 8.33%;
 }
 #copyright {
