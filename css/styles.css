@@ -490,6 +490,9 @@ button {
 .buttonSecondary:active .enabledSecondary {
   display: none;
 }
+.portfolioCopy {
+  display: none;
+}
 /* compact mode */
 @media only screen and (max-width: 599.9px) {
     [class*="col-"] {
