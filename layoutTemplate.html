@@ -117,11 +117,23 @@
                     <img class="activeAction" src="graphics\downloadResume_active.svg">
                     </a>
                 </li>
-                <li class="actionIcon more">
-                    <a href="#moreMenu">
-                    <img class="enabledAction" src="graphics\moreMenu_inactive.svg">
-                    <img class="activeAction" src="graphics\moreMenu_active.svg">
-                    </a>
+                <li class="actionIcon more dropdown">   
+                    <div>      
+                    <div onclick="dropdown()" class="dropbtn">
+                        <img class="enabledAction" src="graphics\moreMenu_inactive.svg">
+                        <img class="activeAction" src="graphics\moreMenu_active.svg">
+                    </div>
+                        <div id="myDropdown" class="dropdownContent">
+                            <a class="menuTab" href="#"><span>Link</span></a>
+                            <a class="menuTab" href="#"><span>Link</span></a>
+                            <a class="menuTab" href="#"><span>Link</span></a>
+                        </div>
+                        <div id="myDropdown2" class="dropdownContent2">
+                            <a href="#">Link</a>
+                            <a href="#">Link</a>
+                            <a href="#">Link</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
             </div>
