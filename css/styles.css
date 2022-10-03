@@ -169,7 +169,7 @@ embed {
   border: 3.5px white solid;
     border-radius: 10px;
     background-color: rgba(17.6, 65.9, 34.5, 0.75);
-  min-width: 160px;
+  min-width: 300px;
   right: 0;
   z-index: 2;
   }
@@ -178,11 +178,12 @@ embed {
   position: absolute;
   margin-top: 4px;
   background-image: url("/graphics/portfolio_background.png");
+      background-position: 50% 25%;
+      background-repeat: no-repeat;
       background-size: cover;
-      background-position: 0% 25%;
       background-color: #A8322D;
       background-attachment: fixed;
-  min-width: 160px;
+  min-width: 300px;
   border-radius: 10px;
   right: 0;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -193,11 +194,21 @@ embed {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    height: 56px;
+    width: 100%;
+  }
+  .label {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-right: 64px;
   }
   .menuTab {
     display: flex;
     flex-direction: row;
+    height: 56px;
     width: 100%;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
   }
   .menuTab img {
     position: absolute;
@@ -213,22 +224,30 @@ embed {
     outline: 3px white solid;
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
-.menuTab a span {
-    display: inline-block;
-    position: absolute;
-    text-decoration: none;
-    font-family: 'Fira Sans Condensed';
-    font-size: 12px;
-    color: white;
-    height: 56px;
-    padding-top: 12px;
-    margin-left: 56px;
-    width: 8.33%;
+.menuTitle {
+  display: inline-block;
+  position: absolute;
+  text-decoration: none;
+  font-family: 'Fira Sans Condensed';
+  font-size: 12px;
+  color: white;
+  height: 56px;
+  padding-top: 12px;
+  margin-left: 12px;
+  margin-right: 16px;
 }
   .dropdownContent2 a {
     visibility: hidden;
     padding: 12px 16px;
     display: block;
+    height: 56px;
+    width: 100%;
+  }
+  .dropdownContent2 hr {
+    visibility: hidden;
+  }
+  .dropdownContent2 .label {
+    visibility: hidden;
   }
   .show {
     display: block;
