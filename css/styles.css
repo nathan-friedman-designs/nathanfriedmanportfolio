@@ -364,6 +364,7 @@ p {
   }
   .nav ul li {
     height: 64px;
+    width: 144px;
   }
   .navTab {
     width: 100%;
@@ -375,6 +376,12 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+  .navTab img.hovered {
+    display: none;
+  }
+  .navTab img.activated {
+    display: none;
+  }
   .navTabTitle {
     display: none;
   }
@@ -383,10 +390,22 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+  .navTab:hover img.enabled {
+    display: none;
+  }
+  .navTab:hover img.activated {
+    display: none;
+  }
   .navTab:active img.activated {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .navTab:active img.enabled {
+    display: none;
+  }
+  .navTab:active img.hovered {
+    display: none;
   }
   .navSubstitute {
     bottom: 0;
