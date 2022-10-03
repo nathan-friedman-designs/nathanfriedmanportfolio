@@ -20,7 +20,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
-  z-index: 2;
+  z-index: 3;
 }
 embed {
   display: block;
@@ -143,6 +143,96 @@ embed {
       outline: 3px white solid;
       border-radius: 50px;
   }
+  .myDropdown {
+    position: absolute;
+    right: 0;
+  }
+  .myDropdown2 {
+    position: absolute;
+    right: 0;
+  }
+  .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+  .dropdownContent {
+    display: none;
+  position: absolute;
+  border: 3.5px white solid;
+    border-radius: 10px;
+    background-color: rgba(17.6, 65.9, 34.5, 0.75);
+  min-width: 160px;
+  right: 0;
+  z-index: 2;
+  }
+  .dropdownContent2 {
+  display: none;
+  position: absolute;
+  margin-top: 4px;
+  background-image: url("/graphics/portfolio_background.png");
+      background-size: cover;
+      background-position: 0% 25%;
+      background-color: #A8322D;
+      background-attachment: fixed;
+  min-width: 160px;
+  border-radius: 10px;
+  right: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+  .dropdownContent a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .menuTab {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .menuTab img {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 16px;
+    left: 44px;
+  }
+  .menuTab:hover {
+    cursor: pointer;
+    background: none;
+    border-radius: 50px;
+    outline: 3px white solid;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+.menuTab a span {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed';
+    font-size: 12px;
+    color: white;
+    height: 56px;
+    padding-top: 12px;
+    margin-left: 56px;
+    width: 8.33%;
+}
+  .dropdownContent2 a {
+    visibility: hidden;
+    padding: 12px 16px;
+    display: block;
+  }
+  .show {
+    display: block;
+  }
   svg {
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
   }
@@ -178,6 +268,11 @@ a {
 }
 .actionTab a span {
     color: white;
+}
+.more img {
+  position: absolute;
+  top: 8px;
+  left: 12px;
 }
 li a:link {
     width: 100%;
