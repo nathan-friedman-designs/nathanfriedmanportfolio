@@ -104,17 +104,19 @@
   }
   .activeAction {
     display: none;
-  }
-  a:active .enabledAction {
-    display: none;
-  }
-  a:active .activeAction {
-    display: block;
     height: 24px;
     width: 24px;
     top: 16px;
     margin-left: 12px;
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+  li:active .enabledAction {
+    display: none;
+  }
+  li:active .activeAction {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .right li:hover {
       cursor: pointer;
@@ -147,11 +149,6 @@ a {
   width: 24px;
   top: 16px;
   left: 44px;
-}
-.actionTab img.enabled {
-    display: inline-block;
-    position: absolute;
-    left: 16px;
 }
 .actionTab:hover {
     cursor: pointer;
@@ -441,23 +438,61 @@ hr {
     margin-left: auto;
     margin-right: auto;
   }
+  .navTab img.hovered {
+    display: none;
+  }
+  .navTab img.activated {
+    display: none;
+  }
   .navTab:hover img.hovered {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .navTab:hover img.enabled {
+    display: none;
+  }
+  .navTab:hover img.activated {
+    display: none;
   }
   .navTab:active img.activated {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .body {
-    display: flex;
-    flex-direction: column;
-}
-  .actionTab i {
-    margin-left: 16px;
+  .navTab:active img.enabled {
+    display: none;
   }
+  .navTab:active img.hovered {
+    display: none;
+  }
+.actionTab {
+    width: 100%;
+    text-align: left;
+}
+.actionTab img.enabled {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.actionTab img.activated {
+  display: none;
+}
+.actionTab:active img.enabled {
+  display: none;
+}
+.actionTab:active img.activated {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.actionTitle {
+  display: none;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+}
   .col-m-1 { 
   width: 8.33%;
   }
@@ -493,12 +528,6 @@ hr {
   }
   .col-m-12 {
     width: 100%;
-  }
-  .actionTab {
-    display: block;
-  }
-  .actionTitle {
-    display: none;
   }
 }
 /* expanded mode */
@@ -548,7 +577,7 @@ hr {
     left: 56px;
   }
   .actionTab {
-    wwidth: 100%;
+    width: 100%;
     text-align: left;
   }
   .actionTab a span {
