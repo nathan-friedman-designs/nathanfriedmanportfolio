@@ -107,14 +107,20 @@
                          id="path2551" /></g></g>
                         </svg>
             <ul class="right">
-                <li>
-                    <img class="actionIcon" src="graphics\viewResume_inactive.svg">
+                <li class="actionIcon">
+                    <a href="#viewResume">
+                        <img class="enabledAction" src="graphics\viewResume_inactive.svg">
+                        <img class="activeAction" src="graphics\viewResume_active.svg">
+                    </a>
                 </li>
-                <li>
-                    <img class="actionIcon" src="graphics\downloadResume_inactive.svg">
+                <li class="actionIcon">
+                    <a href="#downloadResume">
+                    <img class="enabledAction" src="graphics\downloadResume_inactive.svg">
+                    <img class="activeAction" src="graphics\downloadResume_active.svg">
+                    </a>
                 </li>
-                <li>
-                    <img class="actionIcon" src="graphics\moreMenu_inactive.svg">
+                <li class="actionIcon">
+                    <img class="enabledAction" src="graphics\moreMenu_inactive.svg">
                 </li>
             </ul>
             </div>
@@ -127,6 +133,7 @@
                     <a href="#home">
                         <img class="enabled" src="graphics\homeIcon_enabled.svg">
                         <img class="hovered" src="graphics\homeIcon_hovered.svg">
+                        <img class="activated" src="graphics\homeIcon_active.svg">
                     <span class="navTabTitle">
                         Home
                     </span>
@@ -136,6 +143,7 @@
                     <a href="#history">
                         <img class="enabled" src="graphics\myWorks_unvisited.svg">
                         <img class="hovered" src="graphics\myWorks_hovered.svg">
+                        <img class="activated" src="graphics\myWorks_activated.svg">
                         <span class="navTabTitle">
                             Works
                         </span>
@@ -145,6 +153,7 @@
                     <a href="#history">
                         <img class="enabled" src="graphics\mySkills_unvisited.svg">
                         <img class="hovered" src="graphics\mySkills_hovered.svg">
+                        <img class="activated" src="graphics\mySkills_activated.svg">
                         <span class="navTabTitle">
                             Skills
                         </span>
@@ -154,6 +163,7 @@
                     <a href="#history">
                         <img class="enabled" src="graphics\myHistory_unvisited.svg">
                         <img class="hovered" src="graphics\myHistory_hovered.svg">
+                        <img class="activated" src="graphics\myHistory_activated.svg">
                         <span class="navTabTitle">
                             History
                         </span>
@@ -286,18 +296,20 @@
                                 <div class="cardText">
                                     <p class="cardBodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas dui. Mauris sit amet massa vitae. Rhoncus urna neque viverra justo. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas dui. Mauris sit amet massa vitae. Rhoncus urna neque viverra justo. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas dui. Mauris sit amet massa vitae. Rhoncus urna neque viverra justo. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas dui. Mauris sit amet massa vitae. Rhoncus urna neque viverra justo. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu.</p>
                                 </div>
-                                    <button class="buttonPrimary">
-                                        <i class="material-icons">
-                                            home
-                                        </i>
-                                            Primary Action
-                                    </button>
-                                    <button class="buttonSecondary">
-                                        <i class="material-icons">
-                                            home
-                                        </i>
-                                            Secondary Action
-                                    </button>
+                                    <div class="button buttonPrimary">
+                                        <img class="enabledPrimary" src="graphics\viewResume_inactive_button.svg">
+                                        <img class="activePrimary" src="graphics\viewResume_active_button.svg">
+                                        <span>    
+                                        View Resume
+                                        </span>
+                                    </div>
+                                    <div class="button buttonSecondary">
+                                        <img class="enabledSecondary" src="graphics\downloadResume_inactive.svg">
+                                        <img class="activeSecondary" src="graphics\downloadResume_active.svg">
+                                            <span>    
+                                            Download Resume
+                                            </span>
+                                    </div>
                                     <div class="fuiCardInnerShadow">
                                     </div>
                             </div>
