@@ -90,11 +90,37 @@
     flex-direction: row;
     width: 144px;
   }  
-  .right i {
+  .right .actionIcon {
     width: 48px;
     height: 48px;
     padding-top: 8px;
     text-align: center;
+  }
+  .enabledAction {
+    height: 24px;
+    width: 24px;
+    top: 16px;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+  .activeAction {
+    display: none;
+  }
+  a:active .enabledAction {
+    display: none;
+  }
+  a:active .activeAction {
+    display: block;
+    height: 24px;
+    width: 24px;
+    top: 16px;
+    margin-left: 12px;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+  .right li:hover {
+      cursor: pointer;
+      background: none;
+      outline: 3px white solid;
+      border-radius: 50px;
   }
   svg {
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
@@ -107,26 +133,6 @@ a {
 }
 .hovered {
   display: none;
-}
-.actionIcon {
-  height: 24px;
-  width: 24px;
-  top: 16px;
-    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
-}
-.actionIcon:hover {
-    cursor: pointer;
-    background: none;
-    outline: 3px white solid;
-    border-radius: 20px;
-    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
-}
-.menu:hover {
-    cursor: pointer;
-    background: none;
-    outline: 3px white solid;
-    border-radius: 20px;
-    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
 .actionTab {
   display: flex;
@@ -150,8 +156,7 @@ a {
 .actionTab:hover {
     cursor: pointer;
     background: none;
-    border-radius: 20px;
-    color: #002A68;
+    border-radius: 50px;
     outline: 3px white solid;
     filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
@@ -189,7 +194,7 @@ ul {
 }
 .navTab:hover {
     background: white;
-    border-radius: 20px;
+    border-radius: 50px;
 }
 .navTab:hover img {
     color: rgba(17.6, 65.9, 34.5, 0.75);
@@ -264,7 +269,7 @@ p {
   color: white;
   filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
-button {
+.button {
   cursor: pointer;
   height: 40px;
   width: 214px;
@@ -276,18 +281,12 @@ button {
   line-height: 40px;
   filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
-button i {
-  vertical-align: sub;
-}
 .buttonPrimary {
   background-color: white;
   border: none;
   color: rgba(17.6, 65.9, 34.5, 1);
   margin-left: 8.2%;
   border-radius: 20px;
-}
-.buttonPrimary i {
-  color: rgba(17.6, 65.9, 34.5, 1);
 }
 .buttonSecondary {
   background: none;
@@ -296,6 +295,60 @@ button i {
   color: white;
   margin-left: 8.2%;
   border-radius: 20px;
+}
+.buttonPrimary span {
+  position: absolute;
+  top: 0px;
+  left: 42px;
+}
+.buttonSecondary span {
+  position: absolute;
+  top: 0px;
+  left: 42px;
+}
+.enabledPrimary {
+  position: absolute;
+  color: #186635;
+  height: 18px;
+  width: 18px;
+  top: 8px;
+  left: 16px;
+}
+.activePrimary {
+  display: none;
+}
+.activeSecondary {
+  display: none;
+}
+.buttonPrimary:active .activePrimary {
+  display: inline-block;
+  position: absolute;
+  color: #186635;
+  height: 18px;
+  width: 18px;
+  top: 8px;
+  left: 16px;
+}
+.buttonPrimary:active .enabledPrimary {
+  display: none;
+}
+.enabledSecondary {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  top: 8px;
+  left: 16px;
+}
+.buttonSecondary:active .activeSecondary {
+  display: inline-block;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  top: 8px;
+  left: 16px;
+}
+.buttonSecondary:active .enabledSecondary {
+  display: none;
 }
 /* compact mode */
 @media only screen and (max-width: 599.9px) {
@@ -333,9 +386,10 @@ button i {
     margin-left: auto;
     margin-right: auto;
   }
-  .navTab i {
-    margin-left: 0;
-    height: 100%;
+  .navTab:active img.activated {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .navSubstitute {
     bottom: 0;
@@ -349,10 +403,6 @@ button i {
   .right {
     width: 48px;
   }
-  .right .menu {
-    display: inline-block;
-    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
-}
 .right .actionIcon {
     display: none;
 }
@@ -382,9 +432,6 @@ hr {
   .navTabTitle {
     display: none;
   }
-  .navTab i {
-    margin-left: 16px;
-  }
   .navTab {
     width: 100%;
     text-align: left;
@@ -395,6 +442,11 @@ hr {
     margin-right: auto;
   }
   .navTab:hover img.hovered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navTab:active img.activated {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -460,10 +512,33 @@ hr {
     position: absolute;
     left: 16px;
   }
+  .navTab img.hovered {
+    display: none;
+  }
+  .navTab img.activated {
+    display: none;
+  }
   .navTab:hover img.hovered {
     display: inline-block;
     position: absolute;
     left: 16px;
+  }
+  .navTab:hover img.enabled {
+    display: none;
+  }
+  .navTab:hover img.activated {
+    display: none;
+  }
+  .navTab:active img.activated {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+  }
+  .navTab:active img.enabled {
+    display: none;
+  }
+  .navTab:active img.hovered {
+    display: none;
   }
   .navTabTitle {
     display: inline-block;
