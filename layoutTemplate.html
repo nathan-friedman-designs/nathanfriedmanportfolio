@@ -107,14 +107,12 @@
                          id="path2551" /></g></g>
                         </svg>
             <ul class="right">
-                <li class="actionIcon viewResume">
-                    <a href="#viewResume">
+                <li class="actionIcon viewResume" onclick="on()">
                         <img class="enabledAction" src="graphics\viewResume_inactive.svg">
                         <img class="activeAction" src="graphics\viewResume_active.svg">
-                    </a>
                 </li>
                 <li class="actionIcon downloadResume">
-                    <a href="#downloadResume">
+                    <a href="docs\nathan_friedman.pdf" download>
                     <img class="enabledAction" src="graphics\downloadResume_inactive.svg">
                     <img class="activeAction" src="graphics\downloadResume_active.svg">
                     </a>
@@ -129,7 +127,7 @@
             </div>
           </header>
           <div id="overlayResume" onclick="off()">
-            <embed type="application/pdf" src="docs\nathan_friedman.pdf" width="75%" height="75%">
+            <embed type="application/pdf" title="nathan_friedman.pdf" src="docs\nathan_friedman.pdf">
             </div>
           <div class="row navAndBody">
             <div class="navSubstitute col-l-3 col-m-2"></div>
@@ -312,12 +310,24 @@
                                         </span>
                                     </div>
                                     <div class="button buttonSecondary">
-                                        <img class="enabledSecondary" src="graphics\downloadResume_inactive.svg">
-                                        <img class="activeSecondary" src="graphics\downloadResume_active.svg">
-                                            <span>    
+                                        <a href="docs\nathan_friedman.pdf" download>
+                                            <img class="enabledSecondary" src="graphics\downloadResume_inactive.svg">
+                                            <img class="activeSecondary" src="graphics\downloadResume_active.svg">
+                                        <span>    
                                             Download Resume
-                                            </span>
+                                        </span>
+                                        </a>
                                     </div>
+                                    <!--<li class="navTab home selected">
+                                        <a href="#home">
+                                            <img class="enabled" src="graphics\homeIcon_enabled.svg">
+                                            <img class="hovered" src="graphics\homeIcon_hovered.svg">
+                                            <img class="activated" src="graphics\homeIcon_active.svg">
+                                        <span class="navTabTitle">
+                                            Home
+                                        </span>
+                                        </a>
+                                    </li>-->
                                     <div class="fuiCardInnerShadow">
                                     </div>
                             </div>
