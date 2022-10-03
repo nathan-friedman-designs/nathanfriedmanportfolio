@@ -285,7 +285,7 @@ p {
   color: white;
   filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
-.button {
+button {
   cursor: pointer;
   height: 40px;
   width: 214px;
@@ -308,10 +308,8 @@ p {
   background: none;
   border: none;
   outline: 3px white solid;
-  color: white;
   margin-left: 8.2%;
   padding-left: 8.2%;
-  border-radius: 20px;
 }
 .buttonSecondary a {
   color: white;
