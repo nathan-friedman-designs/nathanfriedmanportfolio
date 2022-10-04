@@ -415,6 +415,15 @@ table {
   color: white;
   filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
 button {
   cursor: pointer;
   height: 40px;
