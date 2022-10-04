@@ -107,40 +107,92 @@
                          id="path2551" /></g></g>
                         </svg>
             <ul class="right">
-                <li class="actionIcon">
-                    <a href="#viewResume">
+                <li class="actionIcon viewResume" onclick="on()">
                         <img class="enabledAction" src="graphics\viewResume_inactive.svg">
                         <img class="activeAction" src="graphics\viewResume_active.svg">
-                    </a>
                 </li>
-                <li class="actionIcon">
-                    <a href="#downloadResume">
+                <li class="actionIcon downloadResume">
+                    <a href="docs\nathan_friedman.pdf" download>
                     <img class="enabledAction" src="graphics\downloadResume_inactive.svg">
                     <img class="activeAction" src="graphics\downloadResume_active.svg">
                     </a>
                 </li>
-                <li class="actionIcon">
-                    <img class="enabledAction" src="graphics\moreMenu_inactive.svg">
+                <li class="actionIcon more dropdown">   
+                    <div>      
+                    <div onclick="dropdown()" class="dropbtn">
+                        <img class="enabledAction" src="graphics\moreMenu_inactive.svg">
+                        <img class="activeAction" src="graphics\moreMenu_active.svg">
+                    </div>
+                        <div id="myDropdown" class="dropdownContent">
+                            <a class="menuCompact-plus menuTab" href="#">
+                                <div onclick="on()">
+                                    <img class="enabled" src="graphics\viewResume_inactive.svg">
+                                    <img class="activated" src="graphics\viewResume_active.svg">
+                                    <span class="menuTitle compact-plus">View Resume</span>
+                                </div>
+                            </a>
+                            <a class="menuCompact-plus menuTab" href="docs\nathan_friedman.pdf" download>
+                                <img class="enabled" src="graphics\downloadResume_inactive.svg">
+                                <img class="activated" src="graphics\downloadResume_active.svg">
+                                <span class="menuTitle compact-plus">Download Resume</span>
+                            </a>
+                            <hr>
+                            <p class="label">COPY</p>
+                            <a class="menuTab" href="#">
+                                <div onclick="copyEmailText()">
+                                <img class="enabled" src="graphics\email_inactive.svg">
+                                <img class="activated" src="graphics\email_active.svg">
+                                <span class="menuTitle">Email Address</span>
+                                </div>
+                            </a>
+                            <a class="menuTab" href="#">
+                                <div onclick="copyLinkedInText()">
+                                <img class="enabled" src="graphics\linkedinLink_inactive.svg">
+                                <img class="activated" src="graphics\linkedinLink_active.svg">
+                                <span class="menuTitle">LinkedIn Profile Link</span>
+                                </div>
+                            </a>
+                            <a class="menuTab" href="#">
+                                <div onclick="copyPortfolioText()">
+                                <img class="enabled" src="graphics\portfolioLink_inactive.svg">
+                                <img class="activated" src="graphics\portfolioLink_active.svg">
+                                <span class="menuTitle">Portfolio Link</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="myDropdown2" class="dropdownContent2">
+                            <a class="menuCompact-plus menuTab" href="#">Link</a>
+                            <a class="menuCompact-plus menuTab" href="#">Link</a>
+                            <hr>
+                            <p class="label">COPY</p>
+                            <a class="menuTab" href="#">Link</a>
+                            <a class="menuTab" href="#">Link</a>
+                            <a class="menuTab" href="#">Link</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
             </div>
           </header>
+          <div id="overlayResume" onclick="off()">
+            <embed type="application/pdf" title="nathan_friedman.pdf" src="docs\nathan_friedman.pdf">
+            </div>
           <div class="row navAndBody">
             <div class="navSubstitute col-l-3 col-m-2"></div>
             <div class="nav">
               <ul>
-                <li class="navTab home selected">
-                    <a href="#home">
-                        <img class="enabled" src="graphics\homeIcon_enabled.svg">
+                <li class="navTab home">
+                    <a href="#">
+                        <img class="selected" src="graphics\homeIcon_selected.svg">
                         <img class="hovered" src="graphics\homeIcon_hovered.svg">
                         <img class="activated" src="graphics\homeIcon_active.svg">
                     <span class="navTabTitle">
-                        Home
+                        HOME
                     </span>
                     </a>
                 </li>
                 <li class="navTab works">
-                    <a href="#works">
+                    <a href="works.html">
                         <img class="enabled" src="graphics\myWorks_unvisited.svg">
                         <img class="hovered" src="graphics\myWorks_hovered.svg">
                         <img class="activated" src="graphics\myWorks_activated.svg">
@@ -150,7 +202,7 @@
                     </a>
                 </li>
                 <li class="navTab skills">
-                    <a href="#skills">
+                    <a href="skills.html">
                         <img class="enabled" src="graphics\mySkills_unvisited.svg">
                         <img class="hovered" src="graphics\mySkills_hovered.svg">
                         <img class="activated" src="graphics\mySkills_activated.svg">
@@ -160,7 +212,7 @@
                     </a>
                 </li>
                 <li class="navTab history">
-                    <a href="#history">
+                    <a href="history.html">
                         <img class="enabled" src="graphics\myHistory_unvisited.svg">
                         <img class="hovered" src="graphics\myHistory_hovered.svg">
                         <img class="activated" src="graphics\myHistory_activated.svg">
@@ -171,16 +223,22 @@
                 </li>
                 <hr>
                 <li class="actionTab">
+                    <a href="mailto:nathan.friedman.designs@gmail.com">
                         <img class="enabled" src="graphics\email_inactive.svg">
-                        <span class="actionTitle">
+                        <img class="activated" src="graphics\email_active.svg">
+                        <span class="actionTitle" id="emailCopy">
                             nathan.friedman.designs @gmail.com
                         </span>
+                    </a>
                 </li>
                 <li class="actionTab">
+                    <a href="http://www.linkedin.com/in/nathanfriedmandesigns">
                         <img class="enabled" src="graphics\linkedinLink_inactive.svg">
-                        <span class="actionTitle">
+                        <img class="activated" src="graphics\linkedinLink_active.svg">
+                        <span class="actionTitle" id="linkedinCopy">
                             linkedin.com/in/ nathanfriedmandesigns
                         </span>
+                    </a>
                 </li>
               </ul>
               <br>
@@ -296,20 +354,22 @@
                                 <div class="cardText">
                                     <p class="cardBodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas dui. Mauris sit amet massa vitae. Rhoncus urna neque viverra justo. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas dui. Mauris sit amet massa vitae. Rhoncus urna neque viverra justo. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas dui. Mauris sit amet massa vitae. Rhoncus urna neque viverra justo. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas dui. Mauris sit amet massa vitae. Rhoncus urna neque viverra justo. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu.</p>
                                 </div>
-                                    <div class="button buttonPrimary">
+                                    <button class="buttonPrimary" onclick="on()">
                                         <img class="enabledPrimary" src="graphics\viewResume_inactive_button.svg">
                                         <img class="activePrimary" src="graphics\viewResume_active_button.svg">
                                         <span>    
                                         View Resume
                                         </span>
-                                    </div>
-                                    <div class="button buttonSecondary">
-                                        <img class="enabledSecondary" src="graphics\downloadResume_inactive.svg">
-                                        <img class="activeSecondary" src="graphics\downloadResume_active.svg">
-                                            <span>    
+                                    </button>
+                                    <!--<button class="buttonSecondary">
+                                        <a href="docs\nathan_friedman.pdf" download>
+                                            <img class="enabledSecondary" src="graphics\downloadResume_inactive.svg">
+                                            <img class="activeSecondary" src="graphics\downloadResume_active.svg">
+                                        <span>    
                                             Download Resume
-                                            </span>
-                                    </div>
+                                        </span>
+                                        </a>
+                                    </button>-->
                                     <div class="fuiCardInnerShadow">
                                     </div>
                             </div>
@@ -688,6 +748,7 @@
                 </div>
             </section>
           </div>
+          <p id="portfolioCopy">www.nathanfriedman.designs</p>
 <!--jQuery and JavaScript linking-->
 <script src="https://kit.fontawesome.com/71c0fac313.js" crossorigin="anonymous"></script>
 <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
