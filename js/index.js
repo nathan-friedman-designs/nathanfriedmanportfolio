@@ -12,6 +12,38 @@ function on() {
 function off() {
     document.getElementById("overlayResume").style.display = "none";
 }
+//for viewing case studies
+function onGardopia() {
+    document.getElementById("overlayGardopia").style.display = "block";
+}
+function offGardopia() {
+    document.getElementById("overlayGardopia").style.display = "none";
+}
+function onNVOP() {
+    document.getElementById("overlayNVOP").style.display = "block";
+}
+function offNVOP() {
+    document.getElementById("overlayNVOP").style.display = "none";
+}
+function onDHS() {
+    document.getElementById("overlayDHS").style.display = "block";
+}
+function offDHS() {
+    document.getElementById("overlayDHS").style.display = "none";
+}
+function onBrainspace() {
+    document.getElementById("overlayBrainspace").style.display = "block";
+}
+function offBrainspace() {
+    document.getElementById("overlayBrainspace").style.display = "none";
+}
+function onOutThere() {
+    document.getElementById("overlayOutThere").style.display = "block";
+}
+function offOutThere() {
+    document.getElementById("overlayOutThere").style.display = "none";
+}
+
 
 //for viewing dropdown menu
 function dropdown() {
