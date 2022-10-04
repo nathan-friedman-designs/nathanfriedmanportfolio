@@ -96,5 +96,5 @@ function copyLinkedInText() {
 function copyPortfolioText() {
             //var copyText = document.getElementById("portfolioCopy");
             navigator.clipboard.writeText("http://www.nathanfriedman.designs");
-            alert("Copied the text: http://www.nathanfriedman.designs");
+            alert("Copied the text: https://bit.ly/3CxlWw5");
             }
