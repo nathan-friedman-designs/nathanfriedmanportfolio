@@ -528,6 +528,11 @@ button {
   .navTab img.activated {
     display: none;
   }
+  .navTab img.selected {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .navTabTitle {
     display: none;
   }
@@ -542,6 +547,9 @@ button {
   .navTab:hover img.activated {
     display: none;
   }
+  .navTab:hover img.selected {
+    display: none;
+  }
   .navTab:active img.activated {
     display: block;
     margin-left: auto;
@@ -551,6 +559,9 @@ button {
     display: none;
   }
   .navTab:active img.hovered {
+    display: none;
+  }
+  .navTab:active img.selected {
     display: none;
   }
   .navSubstitute {
@@ -668,6 +679,11 @@ hr {
   .navTab img.activated {
     display: none;
   }
+  .navTab img.selected {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .navTab:hover img.hovered {
     display: block;
     margin-left: auto;
@@ -679,6 +695,9 @@ hr {
   .navTab:hover img.activated {
     display: none;
   }
+  .navTab:hover img.selected {
+    display: none;
+  }
   .navTab:active img.activated {
     display: block;
     margin-left: auto;
@@ -688,6 +707,9 @@ hr {
     display: none;
   }
   .navTab:active img.hovered {
+    display: none;
+  }
+  .navTab:active img.selected {
     display: none;
   }
   .menuTab {
@@ -801,6 +823,8 @@ hr {
   .navTab img.enabled {
     display: inline-block;
     position: absolute;
+    width: 24px;
+    height: 24px;
     left: 16px;
   }
   .navTab img.hovered {
@@ -808,6 +832,13 @@ hr {
   }
   .navTab img.activated {
     display: none;
+  }
+  .navTab img.selected {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
   }
   .navTab:hover img.hovered {
     display: inline-block;
@@ -820,6 +851,9 @@ hr {
   .navTab:hover img.activated {
     display: none;
   }
+  .navTab:active img.selected {
+    display: none;
+  }
   .navTab:active img.activated {
     display: inline-block;
     position: absolute;
@@ -829,6 +863,9 @@ hr {
     display: none;
   }
   .navTab:active img.hovered {
+    display: none;
+  }
+  .navTab:active img.selected {
     display: none;
   }
   .navTabTitle {
