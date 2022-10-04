@@ -700,6 +700,9 @@ button {
 hr {
     display: none;
 }
+.stay {
+  display: block;
+}
 .actionTab {
     display: none;
 }
@@ -884,6 +887,9 @@ hr {
 }
 .actionTitle {
   display: none;
+}
+hr.stay {
+  display: block;
 }
 .body {
   display: flex;
