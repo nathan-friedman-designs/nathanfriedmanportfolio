@@ -44,6 +44,13 @@ function offOutThere() {
     document.getElementById("overlayOutThere").style.display = "none";
 }
 
+//for viewing attributions
+function onAttributions() {
+    document.getElementById("overlayAttributions").style.display = "block";
+}
+function offAttributions() {
+    document.getElementById("overlayAttributions").style.display = "none";
+}
 
 //for viewing dropdown menu
 function dropdown() {
