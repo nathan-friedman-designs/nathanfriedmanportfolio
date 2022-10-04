@@ -490,7 +490,7 @@ button {
 .buttonSecondary:active .enabledSecondary {
   display: none;
 }
-.portfolioCopy {
+#portfolioCopy {
   display: none;
 }
 /* compact mode */
