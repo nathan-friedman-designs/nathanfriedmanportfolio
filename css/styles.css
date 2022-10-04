@@ -436,6 +436,19 @@ button {
   line-height: 40px;
   filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
 }
+.button {
+  cursor: pointer;
+  text-align: center;
+  height: 40px;
+  width: 214px;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
 .buttonPrimary {
   background-color: white;
   border: none;
