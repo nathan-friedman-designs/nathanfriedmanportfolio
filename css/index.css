@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
   }
+/* Changes to image path language made following instructions from GitHub user antonblr on GitHub Community discussion */
   body {
       background-image: url("../images/portBackground.jpg");
       background-size: cover;
