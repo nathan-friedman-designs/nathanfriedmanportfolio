@@ -2,8 +2,9 @@
 * {
     box-sizing: border-box;
   }
+/* Changes to image path language made following instructions from GitHub user antonblr on GitHub Community discussion */
   body {
-      background-image: url("images\portBackground.jpg");
+      background-image: url("../images/portBackground.jpg");
       background-size: cover;
       background-position: 0% 25%;
       background-color: #A8322D;
@@ -155,7 +156,7 @@ embed {
   }
   .topRow {
     position: fixed;
-    background-image: url("images\portBackground.jpg");
+    background-image: url("../images/portBackground.jpg");
       background-size: cover;
       background-position: 0% 25%;
       background-color: #A8322D;
@@ -249,7 +250,7 @@ embed {
   display: none;
   position: absolute;
   margin-top: 4px;
-  background-image: url("images\portBackground.jpg");
+  background-image: url("../images/portBackground.jpg");
       background-position: 0% 25%;
       background-repeat: no-repeat;
       background-size: cover;
@@ -614,7 +615,7 @@ button {
     position: fixed;
     bottom: -5vh;
     width: 100%;
-    background-image: url("images\portBackground.jpg");
+    background-image: url("../images/portBackground.jpg");
       background-size: cover;
       background-position: 0% 25%;
       background-color: #A8322D;
