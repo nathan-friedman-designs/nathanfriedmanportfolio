@@ -1,0 +1,1118 @@
+/* universal mode */
+* {
+    box-sizing: border-box;
+  }
+/* Changes to image path language made following instructions from GitHub user antonblr on GitHub Community discussion */
+  body {
+      background-image: url("../images/portBackground.jpg");
+      background-size: cover;
+      background-position: 0% 25%;
+      background-color: #A8322D;
+      background-attachment: fixed;
+      cursor: crosshair;
+}
+#overlayResume {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+}
+#overlayGardopia{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+}
+#overlayNVOP{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+}
+#overlayDHS{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+}
+#overlayBrainspace{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+}
+#overlayOutThere{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+}
+#overlayAttributions{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 3;
+}
+embed {
+  display: block;
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+  ::-webkit-scrollbar {
+    width: 16px;
+}
+::-webkit-scrollbar-track {
+    background-color: #A8322D;
+}
+::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: 2px 2px 4px rgb(0 0 0/0.75); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+  [class*="col-"] {
+    float: left;
+    padding: 16px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 72px;
+  }
+  .fuiContainer-left {
+    flex: 50%;
+    margin-bottom: 3vh;
+  }
+  .fuiContainer-right {
+    flex: 50%;
+    margin-bottom: 3vh;
+  }
+  .fuiContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 328px;
+    min-height: 647px;
+  }
+  .fuiRingSet {
+    width: 300px;
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .topRow {
+    position: fixed;
+    background-image: url("../images/portBackground.jpg");
+      background-size: cover;
+      background-position: 0% 25%;
+      background-color: #A8322D;
+      background-attachment: fixed;
+      top: 0;
+      z-index: 1;
+  }
+  .nav {
+    position: fixed;
+    margin-top: 80px;
+    width: 25%;
+    margin-top: 72px;
+    z-index: 1;
+  }
+  .navSubstitute {
+    margin-top: 72px;
+    height: 100%;
+    visibility: hidden;
+  }
+  .right {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    width: 144px;
+  }  
+  .right .actionIcon {
+    width: 48px;
+    height: 48px;
+    padding-top: 8px;
+    text-align: center;
+  }
+  .enabledAction {
+    height: 24px;
+    width: 24px;
+    top: 16px;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+  .activeAction {
+    display: none;
+    height: 24px;
+    width: 24px;
+    top: 16px;
+    margin-left: 12px;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+  li:active .enabledAction {
+    display: none;
+  }
+  li:active .activeAction {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .right li:hover {
+      cursor: pointer;
+      background: none;
+      outline: 3px white solid;
+      border-radius: 50px;
+  }
+  .myDropdown {
+    position: absolute;
+    right: 0;
+  }
+  .myDropdown2 {
+    position: absolute;
+    right: 0;
+  }
+  .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+  .dropdownContent {
+    display: none;
+  position: absolute;
+  border: 3.5px white solid;
+    border-radius: 10px;
+    background-color: rgba(17.6, 65.9, 34.5, 0.75);
+  min-width: 25%;
+  right: 0;
+  z-index: 2;
+  }
+  .dropdownContent2 {
+  display: none;
+  position: absolute;
+  margin-top: 4px;
+  background-image: url("../images/portBackground.jpg");
+      background-position: 0% 25%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #A8322D;
+      background-attachment: fixed;
+  min-width: 25%;
+  border-radius: 10px;
+  right: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+  .dropdownContent a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    height: 56px;
+    width: 100%;
+  }
+  .label {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-right: 180px;
+    margin-left: 20px;
+  }
+  .dropdownContent .menuCompact-plus {
+    display: none;
+  }
+  .dropdownContent hr {
+    display: none;
+  }
+  .dropdownContent2 .menuCompact-plus {
+    display: none;
+  }
+  .dropdownContent2 hr {
+    display: none;
+  }
+  .menuTab {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    width: 100%;
+    line-height: 28px;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+    }
+  .menuTab img {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    top: 16px;
+    left: 44px;
+  }
+  .menuTab:hover {
+      cursor: pointer;
+      background: none;
+      border-radius: 50px;
+      outline: 3px white solid;
+      filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+  .menuTab a span {
+      color: white;
+  }
+  .dropdownContent2 a {
+    visibility: hidden;
+    padding: 12px 16px;
+    display: block;
+    height: 56px;
+    width: 100%;
+  }
+  .dropdownContent2 hr {
+    visibility: hidden;
+  }
+  .dropdownContent2 .label {
+    visibility: hidden;
+  }
+  .show {
+    display: block;
+  }
+  svg {
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+a {
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed';
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.hovered {
+  display: none;
+}
+.actionTab {
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+  width: 100%;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+.actionTab img {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 16px;
+  left: 44px;
+}
+.actionTab:hover {
+    cursor: pointer;
+    background: none;
+    border-radius: 50px;
+    outline: 3px white solid;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+.actionTab a span {
+    color: white;
+}
+.more img {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+li a:link {
+    width: 100%;
+}
+i {
+    color: white;
+}
+ul {
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.navTab {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    width: 100%;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+  }
+.navTab a span {
+    color: white;
+}
+.navTab img {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 16px;
+  left: 44px;
+}
+.navTab:hover {
+    background: white;
+    border-radius: 50px;
+}
+.navTab:hover img {
+    color: rgba(17.6, 65.9, 34.5, 0.75);
+    filter: drop-shadow(0 0 0);
+}
+.navTab:hover span {
+    color: rgba(17.6, 65.9, 34.5, 0.75);
+    filter: drop-shadow(0 0 0);
+}
+li a:link {
+    width: 100%;
+}
+#copyright {
+    font-size: 12px;
+    margin-left: 20px;
+    font-family: 'Comfortaa';
+    color: white;
+}
+.fuiCardOuter {
+    position: relative;
+    width: 328px;
+    min-height: 437px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.fuiCardInner {
+    margin: 0 auto;
+    width: 280px;
+    min-height: 390px;
+    border: 3.5px white solid;
+    border-radius: 10px;
+    background-color: rgba(17.6, 65.9, 34.5, 0.75);
+}
+/* for fuiCardOuter and fuiCardInner selectors, some edits to position, display, margin, height, and padding provided by Farshad Vaghari on StackOverflow*/
+.fuiCardCornerNW {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+}
+.fuiCardCornerNE {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+}
+.fuiCardCornerSE {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    right: 0;
+}
+.fuiCardCornerSW {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+}
+.cardText {
+  display: block;
+  margin-left: 8.2%; 
+  top: 14px;
+  width: 214px;
+}
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+h2 {
+  font-size: 24px;
+    font-family: 'Comfortaa';
+    color: white;
+}
+h3 {
+  font-family: 'Nunito Sans';
+  font-size: 20px;
+  color: white;
+}
+table {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+button {
+  cursor: pointer;
+  height: 40px;
+  width: 214px;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+.button {
+  cursor: pointer;
+  text-align: center;
+  height: 40px;
+  width: 214px;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+.buttonPrimary {
+  background-color: white;
+  border: none;
+  color: rgba(17.6, 65.9, 34.5, 1);
+  margin-left: 8.2%;
+  border-radius: 20px;
+}
+.disabledButton {
+  background-color: rgba(256, 256, 256, 0.5);
+  border: none;
+  color: rgba(17.6, 65.9, 34.5, 1);
+  margin-left: 8.2%;
+  border-radius: 20px;
+}
+.buttonSecondary {
+  background: none;
+  border: none;
+  outline: 3px white solid;
+  margin-left: 8.2%;
+  padding-left: 8.2%;
+}
+.buttonSecondary a {
+  color: white;
+}
+.buttonSecondary a:hover {
+  cursor: pointer;
+}
+.buttonPrimary span {
+  position: absolute;
+  top: 0px;
+  left: 42px;
+}
+.buttonSecondary span {
+  position: absolute;
+  top: 0px;
+  left: 42px;
+}
+.enabledPrimary {
+  position: absolute;
+  color: #186635;
+  height: 18px;
+  width: 18px;
+  top: 8px;
+  left: 16px;
+}
+.activePrimary {
+  display: none;
+}
+.activeSecondary {
+  display: none;
+}
+.buttonPrimary:active .activePrimary {
+  display: inline-block;
+  position: absolute;
+  color: #186635;
+  height: 18px;
+  width: 18px;
+  top: 8px;
+  left: 16px;
+}
+.buttonPrimary:active .enabledPrimary {
+  display: none;
+}
+.enabledSecondary {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  top: 8px;
+  left: 16px;
+}
+.buttonSecondary:active .activeSecondary {
+  display: inline-block;
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  top: 8px;
+  left: 16px;
+}
+.buttonSecondary:active .enabledSecondary {
+  display: none;
+}
+#portfolioCopy {
+  display: none;
+}
+/* compact mode */
+@media only screen and (max-width: 599.9px) {
+    [class*="col-"] {
+    width: 100%;
+  }
+  .nav {
+    position: fixed;
+    bottom: -5vh;
+    width: 100%;
+    background-image: url("../images/portBackground.jpg");
+      background-size: cover;
+      background-position: 0% 25%;
+      background-color: #A8322D;
+      background-attachment: fixed;
+  }
+  .nav ul li {
+    height: 64px;
+    width: 144px;
+  }
+  .navTab {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .navTab img.enabled {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navTab img.hovered {
+    display: none;
+  }
+  .navTab img.activated {
+    display: none;
+  }
+  .navTab img.selected {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navTabTitle {
+    display: none;
+  }
+  .navTab:hover img.hovered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navTab:hover img.enabled {
+    display: none;
+  }
+  .navTab:hover img.activated {
+    display: none;
+  }
+  .navTab:hover img.selected {
+    display: none;
+  }
+  .navTab:active img.activated {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navTab:active img.enabled {
+    display: none;
+  }
+  .navTab:active img.hovered {
+    display: none;
+  }
+  .navTab:active img.selected {
+    display: none;
+  }
+  .navSubstitute {
+    bottom: 0;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .right {
+    width: 48px;
+  }
+.right .viewResume {
+    display: none;
+}
+.right .downloadResume {
+  display: none;
+}
+.actionIcon .more {
+  display: block;
+}
+hr {
+    display: none;
+}
+.stay {
+  display: block;
+}
+.actionTab {
+    display: none;
+}
+.dropdownContent .menuCompact-plus {
+  display: block;  
+  width: 100%;
+    text-align: left;
+}
+.dropdownContent hr {
+  display: block;  
+  width: 100%;
+}
+.dropdownContent2 .menuCompact-plus {
+  display: block;  
+  width: 100%;
+    text-align: left;
+}
+.dropdownContent2 hr {
+  display: block;  
+  width: 100%;
+}
+.menuTab {
+  width: 100%;
+  text-align: left;
+}
+.menuTab a span {
+  color: white;
+  }
+  .menuTab img.enabled {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    top: 12px;
+  }
+.menuTab img.activated {
+  display: none;
+}
+.menuTab:active img.enabled {
+  display: none;
+}
+.menuTab:active img.activated {
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+  top: 12px;
+}
+.menuTitle {
+  display: inline-block;
+  position: absolute;
+  text-decoration: none;
+  font-family: 'Fira Sans Condensed';
+  font-size: 12px;
+  color: white;
+  height: 56px;
+  margin-left: 48px;
+}
+#copyright {
+    display: none;
+}
+.body {
+    margin-top: -32px;
+    margin-bottom: 64px;
+}
+}
+
+/* medium mode */
+@media only screen and (min-width: 600px) {
+  .nav {
+    width: 16.66%;
+  } 
+  .navSubstitute {
+    width: 100%;
+  } 
+  .navTabTitle {
+    display: none;
+  }
+  .navTab {
+    width: 100%;
+    text-align: left;
+  }
+  .navTab img.enabled {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navTab img.hovered {
+    display: none;
+  }
+  .navTab img.activated {
+    display: none;
+  }
+  .navTab img.selected {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navTab:hover img.hovered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navTab:hover img.enabled {
+    display: none;
+  }
+  .navTab:hover img.activated {
+    display: none;
+  }
+  .navTab:hover img.selected {
+    display: none;
+  }
+  .navTab:active img.activated {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navTab:active img.enabled {
+    display: none;
+  }
+  .navTab:active img.hovered {
+    display: none;
+  }
+  .navTab:active img.selected {
+    display: none;
+  }
+  .menuTab {
+    width: 100%;
+    text-align: left;
+  }
+  .menuTab .compact-plus {
+    display: none;
+  }
+  .menuTab a span {
+    color: white;
+    }
+    .menuTab img.enabled {
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      top: 12px;
+    }
+  .menuTab img.activated {
+    display: none;
+  }
+  .menuTab:active img.enabled {
+    display: none;
+  }
+  .menuTab:active img.activated {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    top: 12px;
+  }
+  .menuTitle {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed';
+    font-size: 12px;
+    color: white;
+    height: 56px;
+    margin-left: 48px;
+}
+.actionTab {
+    width: 100%;
+    text-align: left;
+}
+.actionTab img.enabled {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.actionTab img.activated {
+  display: none;
+}
+.actionTab:active img.enabled {
+  display: none;
+}
+.actionTab:active img.activated {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.actionTitle {
+  display: none;
+}
+hr.stay {
+  display: block;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+}
+  .col-m-1 { 
+  width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+/* expanded mode */
+@media only screen and (min-width: 840px) {
+  .navTab {
+    width: 100%;
+    text-align: left;
+  }
+  .navTab img.enabled {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+  }
+  .navTab img.hovered {
+    display: none;
+  }
+  .navTab img.activated {
+    display: none;
+  }
+  .navTab img.selected {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+  }
+  .navTab:hover img.hovered {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+  }
+  .navTab:hover img.enabled {
+    display: none;
+  }
+  .navTab:hover img.activated {
+    display: none;
+  }
+  .navTab:active img.selected {
+    display: none;
+  }
+  .navTab:active img.activated {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+  }
+  .navTab:active img.enabled {
+    display: none;
+  }
+  .navTab:active img.hovered {
+    display: none;
+  }
+  .navTab:active img.selected {
+    display: none;
+  }
+  .navTabTitle {
+    display: inline-block;
+    position: absolute;
+    height: 56px;
+    padding-top: 18px;
+    left: 56px;
+  }
+  .menuTab {
+    width: 100%;
+    text-align: left;
+  }
+  .menuTab a span {
+    color: white;
+    }
+    .menuTab img.enabled {
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      top: 12px;
+    }
+  .menuTab img.activated {
+    display: none;
+  }
+  .menuTab:active img.enabled {
+    display: none;
+  }
+  .menuTab:active img.activated {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    top: 12px;
+  }
+  .menuTitle {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed';
+    font-size: 12px;
+    color: white;
+    height: 56px;
+    margin-left: 48px;
+}
+  .actionTab {
+    width: 100%;
+    text-align: left;
+  }
+  .actionTab a span {
+    color: white;
+    }
+    .actionTab img.enabled {
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+    }
+  .actionTab img.activated {
+    display: none;
+  }
+  .actionTab:active img.enabled {
+    display: none;
+  }
+  .actionTab:active img.activated {
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+  }
+  .actionTitle {
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Fira Sans Condensed';
+    font-size: 12px;
+    color: white;
+    height: 56px;
+    padding-top: 12px;
+    margin-left: 56px;
+    width: 8.33%;
+}
+#copyright {
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 6%;
+}
+.body {
+    display: flex;
+    flex-direction: row;
+  }
+.col-l-1 { 
+  width: 8.33%;
+}
+.col-l-2 {
+  width: 16.66%;
+}
+.col-l-3 {
+  width: 25%;
+}
+.col-l-4 {
+  width: 33.33%;
+}
+.col-l-5 {
+  width: 41.66%;
+}
+.col-l-6 {
+  width: 50%;
+}
+.col-l-7 {
+  width: 58.33%;
+}
+.col-l-8 {
+  width: 66.66%;
+}
+.col-l-9 {
+  width: 75%;
+}
+.col-l-10 {
+  width: 83.33%;
+}
+.col-l-11 {
+  width: 91.66%;
+}
+.col-l-12 {
+  width: 100%;
+}
+}
+
