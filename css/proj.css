@@ -144,7 +144,7 @@ embed {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 328px;
+    width: 98%;
     min-height: 647px;
   }
   .fuiRingSet {
@@ -423,14 +423,14 @@ li a:link {
 }
 .fuiCardOuter {
     position: relative;
-    width: 328px;
+    width: 100%;
     min-height: 437px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 .fuiCardInner {
     margin: 0 auto;
-    width: 280px;
+    width: 89%;
     min-height: 390px;
     border: 3.5px white solid;
     border-radius: 10px;
@@ -469,7 +469,7 @@ li a:link {
   display: block;
   margin-left: 8.2%; 
   top: 14px;
-  width: 214px;
+  width: 85%;
 }
 p {
   font-family: 'Nunito Sans', sans-serif;
