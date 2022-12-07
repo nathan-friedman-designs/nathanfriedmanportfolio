@@ -378,7 +378,6 @@ i {
     color: white;
 }
 ul {
-    list-style-type: none;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -472,6 +471,12 @@ li a:link {
   width: 85%;
 }
 p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+  filter: drop-shadow(2px 2px 4px rgb(0 0 0/0.75));
+}
+li {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   color: white;
@@ -686,7 +691,11 @@ button {
     bottom: 0;
     width: 100%;
   }
-  ul {
+  .cardBodyText ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav ul {
     display: flex;
     flex-direction: row;
     width: 100%;
