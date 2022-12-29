@@ -616,6 +616,9 @@ button {
 #portfolioCopy {
   display: none;
 }
+.insert {
+  border: 2px solid grey;
+}
 /* compact mode */
 @media only screen and (max-width: 599.9px) {
     [class*="col-"] {
