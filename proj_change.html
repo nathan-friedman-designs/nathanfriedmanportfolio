@@ -340,12 +340,13 @@
                                         </div>
                                         <div>
                                         <h3>Phase 1: User Research</h3>
-                                                <div class="insert">
-
-                                                </div>
                                                 <p>
                                                     To conduct my research, I reached out to my network and soon interviewed real working parents (or homemakers who were raising children, such as time and available participants would allow). From their feedback, I identified commonalities using affinity diagramming and humanized the data via empathy maps and user scenarios.
                                                 </p>
+                                                <div class="insert">
+                                                    <img class="insertImage" src="images\Copy of affinityDiagram_step2.png">
+                                                    <img class="insertImage" src="images\Copy of affinityDiagram_step4.png">
+                                                </div>
                                                 <p>
                                                     Interview questions were based on the research objectives: to understand the average working parent’s thought process during a sudden change in schedule, and to empathize with how they felt about their responses.
                                                 </p>
@@ -355,6 +356,9 @@
                                                 <p>
                                                     To add a point of focus for my user-centered design, I invented Lisa Hernandez, a composite persona of the data from my interviews. In her early 30s, Lisa was a working mother of two who wanted to adapt well to schedule changes and avoid the stress of being unprepared. Therefore, she was just right for the app I was envisioning.  
                                                 </p>
+                                                <div class="insert">
+                                                    <img class="insertImage" src="images\Copy of empathyMap.jpg">
+                                                </div>
                                         </div>
                                         <div>
                                         <h3>Phase 2: Definition</h3>
@@ -364,26 +368,60 @@
                                             <p>
                                                 Both calendar apps were easy to use and allowed for wide app integration and collaboration, but were limited in scheduling and automation features, at least in respect to resolving our user’s problem. Zapier excelled in app integration and automation; however, it was too technical for the average working parent, and suffered from multiple usability challenges. ClickUp had a strong ability to let its users share and collaborate with others on a custom-made task, but the app was bloated with so many options for the user to choose that they could be overwhelmed. The challenge became designing one app that gathered together the best functions of three different kinds of apps without suffering from their combined drawbacks.
                                             </p>
+                                            <div class="insert">
+
+                                            </div>
                                             <p>
                                                 One of the other big points taken from the user interviews was that parents already knew what needed to be done if their schedule suddenly changed, but when the time came to put those ideas into action, their execution was slow and sloppy. What was challenging them, and how could the app I was designing help Lisa, my user persona, to overcome those obstacles and respond better?  
                                             </p>
                                             <p>
                                                 After referring back to the data and imagining myself as Lisa reacting to her schedule being changed, the problem dawned on me: Lisa was human. In the event that she was working, and received a call that her child was sick and needed to be picked up from daycare, Lisa couldn’t inform her boss and call her spouse and travel to the daycare and all the other things that had to be done right then and there. Like the rest of us, Lisa could only finish tasks one by one; maybe having to approach each assignment in different ways; maybe having to do it all by herself. It was inefficient and ineffective. Knowing now the challenge that parents were facing, I began to ideate.
                                             </p>
+                                            <div class="insert">
+                                                <p><i>"A stressed, working mother needs a streamlined response to schedule changes because it frees her to pursue the things most important to her." - from the User Insight Statement
+                                                </i></p>
+                                            </div>
                                         </div>
                                         <div>
                                             <h3>Phase 3: Ideation</h3>
                                             <p>
                                                 Again, I engaged in thought experiments, approaching Lisa’s problem from the perspective of the smartphone she carried. When her schedule suddenly changed, what could an app on a phone do to respond better than Lisa could? A smartphone could multitask quickly and perfectly; it could connect with faraway devices, sending or receiving information without physically being there; it could run complex tasks for a long time without emotional strain; and it could do all that again and again in exactly the same way. All it needed was a human to command it. Of course, a phone could not pick up a child from daycare. However, things like texting other parents and emailing her coworkers; those could be tasks taken up by a machine. Therefore, the first iteration of my solution was an app that used customized automation, app integration, and time management to free Lisa in a time of surprise from the small but necessary tasks, and let her focus on what was important to her.
                                             </p>
+                                            <p>
+                                                Before putting pen to paper, I made a list of the important tasks I would need users to test, and included the major screens the users would have to interact with to complete those tasks. For each screen, I jotted down the UI elements necessary to make them function. Keeping in mind that the app was supposed to be most useful when emotions were high and time was of the essence, I made accessibility the priority in deciding which screen appeared where within the information architecture, as well as where exactly to place each UI component on those screens. The sketches themselves went through four iterations before a single tester laid eyes on them.
+                                            </p>
+                                            <div class="insert">
+                                                <p><i>
+                                                    <ul class="insertText">
+                                                        <p>Calendar Screen</p>
+                                                    <li>Hamburger menu in top bar</li>
+                                                    <li>All Day card (darkened)</li>
+                                                        <ul class="insertText2">
+                                                            <li>Text for All Day</li>
+                                                        </ul>
+                                                    <li>Hours texts</li>
+                                                    <li>Now-time marker line</li>
+                                                    <li>FAB</li>
+                                                        <ul  class="insertText2">
+                                                            <li>Plus sign</li>
+                                                        </ul>
+                                                    <li>Event card x2</li>
+                                                        <ul  class="insertText2">
+                                                            <li>Calendar color strip</li>
+                                                            <li>Header</li>
+                                                            <li>Body text</li>
+                                                        </ul>
+                                                    </ul>
+                                                    <p class="insertText">
+                                                        - from the Sketch Content List, version 4
+                                                    </p>
+                                                </i></p>
+                                            </div>
                                         </div>
                                         <div>
                                         <h3>Phase 4: Paper Prototyping / RWD Wireframing</h3>
                                         <p>
-                                            Before putting pen to paper, I made a list of the important tasks I would need users to test, and included the major screens the users would have to interact with to complete those tasks. For each screen, I jotted down the UI elements necessary to make them function. Keeping in mind that the app was supposed to be most useful when emotions were high and time was of the essence, I made accessibility the priority in deciding which screen appeared where within the information architecture, as well as where exactly to place each UI component on those screens. The sketches themselves went through four iterations before a single tester laid eyes on them.
-                                        </p>
-                                        <p>
-                                            In the very first draft, I made the Daily Calendar view the home screen, because I thought Lisa would want to see how her immediate schedule was affected by change. Building on that idea, three of the four tabs on the navigation bar were calendar-related to make it easier for the user to access them instead of pressing a fast-action button. However, since the Workflows screen would be where Lisa would trigger her response, it seemed the next logical place she would go, so its tab was rightmost on the bar and so easiest for her thumb to reach. On the Workflows main page, I separated workflows into Continuous-mode and Standby-mode types: As their names suggested, Continuous workflows were always running once they were activated, while Standby-mode workflows ran only once upon activation and then reset once they completed their tasks. I thought having both options available would give users like Lisa more power in situations I could not predict.
+                                            In the very first draft of the sketch, I made the Daily Calendar view the home screen, because I thought Lisa would want to see how her immediate schedule was affected by change. Building on that idea, three of the four tabs on the navigation bar were calendar-related to make it easier for the user to access them instead of pressing a fast-action button. However, since the Workflows screen would be where Lisa would trigger her response, it seemed the next logical place she would go, so its tab was rightmost on the bar and so easiest for her thumb to reach. On the Workflows main page, I separated workflows into Continuous-mode and Standby-mode types: As their names suggested, Continuous workflows were always running once they were activated, while Standby-mode workflows ran only once upon activation and then reset once they completed their tasks. I thought having both options available would give users like Lisa more power in situations I could not predict.
                                         </p>
                                         <p>
                                             However, after the first sketches were made, it occurred to me that my setup could be unintentionally solving the wrong challenge. Referring back to the findings from the user interviews, I came to the conclusion that Lisa could already guess how her schedule would change; her problem– my problem– was how she responded to it. So I iterated my sketches, demoting the calendar from being the homepage to being a primary page, and making a new home screen for responding to change. I divided the area of the screen above the fold into halves, with the bottom half being where Lisa would activate her workflows to respond to changes, and the top half being reserved for a Control, which is what I called the task management function that allowed Lisa to manage the results of her response. These sections were placed to be most accessible when they were most needed. I also altered the navbar so that the Controls had their own tab if Lisa needed to revisit one later. 
@@ -415,7 +453,9 @@
                                         <p>
                                             This third iteration was the version shown to testers for the next round. However, after a user observed that young children playing around with their device might accidentally (or as a prank) activate an AutoAssist without their parent’s knowledge, I saw that a modification was needed urgently, before even the next test could commence. Whereas the Activate button had been exposed on the lock screen previously, I added two measures of security. First, the notification was altered so that the button was hidden and the user had to expand the notification to reveal it. Then, I redesigned the interaction so that the user had to hold down the button before the AutoAssist would run after a few moments’ delay. I was confident these changes would be enough to prevent unintentional interaction with the app. Yet, I was unable to conjure a method to prevent misuse by unauthorized users; not without sacrificing ease of use and ruining the feature.
                                         </p>
-                                        <p class="insert"><i>“[I’m] nervous that I don’t have anything like this set up”. - a tester</i></p>
+                                        <div class="insert">
+                                        <p class="insertText"><i>“[I’m] nervous that I don’t have anything like this set up”. - a tester</i></p>
+                                        </div>
                                         <p>
                                             The feedback from the testing was very positive and demonstrated that overall improvement on the previous prototype had been successful. Testers expressed delight with the lock screen AutoAssist-activation feature, and, even with the new security measures, thought it more easy to use than opening up their device and going into the app. Criticisms were generally of a smaller nature, most notably concerning the visual design like graphics and cues, and no mention was made of the app needing a calendar feature. The next major step then was to define and apply styling for the upcoming mockup.
                                         </p>
