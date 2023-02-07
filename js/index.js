@@ -13,6 +13,12 @@ function off() {
     document.getElementById("overlayResume").style.display = "none";
 }
 //for viewing case studies
+function onChangeReaction() {
+    document.getElementById("overlayChangeReaction").style.display = "block";
+}
+function offChangeReaction() {
+    document.getElementById("overlayChangeReaction").style.display = "none";
+}
 function onGardopia() {
     document.getElementById("overlayGardopia").style.display = "block";
 }
